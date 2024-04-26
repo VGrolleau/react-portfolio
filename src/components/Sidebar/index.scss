@@ -23,7 +23,79 @@
             }
 
             .text-virginie {
-                font-size: 12px;
+                font-size: 14px;
+            }
+        }
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 210px;
+        width: 100%;
+
+        a {
+            font-size: 22px;
+            color: #4d4d4e;
+            text-decoration: none;
+            position: relative;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
+            i {
+                transition: all 0.3s ease-out;
+            }
+
+            &:hover {
+                color: #ffd700;
+
+                svg {
+                    opacity: 0;
+                }
+
+                &:after {
+                    opacity: 1;
+                }
+            }
+
+            &:after {
+                content: "";
+                font-size: 9px;
+                letter-spacing: 2px;
+                position: absolute;
+                bottom: 0;
+                display: block;
+                width: 100%;
+                text-align: center;
+                opacity: 0;
+                transition: all 0.3s ease-out;
+            }
+
+            &:first-child {
+                &::after {
+                    content: "ACCUEIL";
+                }
+            }
+        }
+
+        a.about-link {
+            &:after {
+                content: "À PROPOS";
+            }
+        }
+
+        a.contact-link {
+            &:after {
+                content: "CONTACT";
+            }
+        }
+
+        a.active {
+            svg {
+                color: #ffd700;
             }
         }
     }

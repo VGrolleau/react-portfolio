@@ -1,17 +1,30 @@
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import './index.scss';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons';
 
 const Sidebar = () => {
     return (
-        <div className='nav-bar'>
-            <Link className='logo' to='/'>
+        <div className="nav-bar">
+            <Link className="logo" to="/">
                 <svg width="250" height="290" xmlns="http://www.w3.org/2000/svg" className='img'>
-                    <text x="4" y="38" fontFamily="Coolvetica" fontSize="50" fill="#ffd700" className='text-v'>V</text>
-                    <text x="6" y="35" fontFamily="Coolvetica" fontSize="50" fill="#115173" className='text-v'>V</text>
+                    <text x="8" y="38" fontFamily="Coolvetica" fontSize="50" fill="#ffd700" className='text-v'>V</text>
+                    <text x="10" y="35" fontFamily="Coolvetica" fontSize="50" fill="#115173" className='text-v'>V</text>
 
-                    <text x="6" y="55" fontFamily="Coolvetica" fontSize="12" fill="white" stroke="none" className='text-virginie'>Virginie</text>
+                    <text x="3" y="55" fontFamily="Coolvetica" fontSize="14" fill="white" stroke="none" className='text-virginie'>Virginie</text>
                 </svg>
             </Link>
+            <nav>
+                <NavLink exact="true" activeclassname="active" to="/">
+                    <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
+                </NavLink>
+                <NavLink exact="true" activeclassname="active" className="about-link" to="/about">
+                    <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
+                </NavLink>
+                <NavLink exact="true" activeclassname="active" className="contact-link" to="/contact">
+                    <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
+                </NavLink>
+            </nav>
         </div>
     )
 };
