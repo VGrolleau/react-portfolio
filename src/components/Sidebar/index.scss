@@ -87,6 +87,12 @@
             }
         }
 
+        a.portfolio-link {
+            &:after {
+                content: "PROJETS";
+            }
+        }
+
         a.contact-link {
             &:after {
                 content: "CONTACT";
