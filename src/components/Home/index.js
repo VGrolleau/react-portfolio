@@ -3,6 +3,7 @@ import './index.scss';
 import { useEffect, useState } from 'react';
 import AnimatedLetters from '../AnimatedLetters';
 import Logo from './Logo';
+import Loader from 'react-loaders';
 
 const Home = () => {
     const [letterClass, setLetterClass] = useState('text-animate');
@@ -18,25 +19,29 @@ const Home = () => {
     }, [])
 
     return (
-        <div className="container home-page">
-            <div className="text-zone">
-                <h1>
-                    <AnimatedLetters letterClass={letterClass} charactersArray={hiArray} index={10} />
-                    <br />
-                    <AnimatedLetters letterClass={letterClass} charactersArray={iAmArray} index={18} />
-                    <svg xmlns="http://www.w3.org/2000/svg" className="img-home">
-                        <text x="0" y="50" fontFamily="Coolvetica" fill="#ffd700" className='text-v-home'>V</text>
-                        <text x="3" y="48" fontFamily="Coolvetica" fill="#115173" className='text-v-home'>V</text>
-                    </svg>
-                    <AnimatedLetters letterClass={letterClass} charactersArray={nameArray} index={25} />
-                    <br />
-                    <AnimatedLetters letterClass={letterClass} charactersArray={jobArray} index={33} />
-                </h1>
-                <h2>Développeuse Fullstack / Spécialisée ReactJS</h2>
-                <Link to="/contact" className="flat-button">Me contacter</Link>
+        <>
+            <div className="container home-page">
+                <div className="text-zone">
+                    <h1>
+                        <AnimatedLetters letterClass={letterClass} charactersArray={hiArray} index={10} />
+                        <br />
+                        <AnimatedLetters letterClass={letterClass} charactersArray={iAmArray} index={18} />
+                        <svg xmlns="http://www.w3.org/2000/svg" className="img-home">
+                            <text x="0" y="50" fontFamily="Coolvetica" fill="#ffd700" className='text-v-home'>V</text>
+                            <text x="3" y="48" fontFamily="Coolvetica" fill="#115173" className='text-v-home'>V</text>
+                        </svg>
+                        <AnimatedLetters letterClass={letterClass} charactersArray={nameArray} index={25} />
+                        <br />
+                        <AnimatedLetters letterClass={letterClass} charactersArray={jobArray} index={33} />
+                    </h1>
+                    <h2>Développeuse Fullstack / Spécialisée ReactJS</h2>
+                    <Link to="/contact" className="flat-button">Me contacter</Link>
+                </div>
+                <Logo />
             </div>
-            <Logo />
-        </div>
+
+            <Loader type='pacman' />
+        </>
     )
 };
 
