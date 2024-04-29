@@ -1,49 +1,60 @@
 .logo-container {
-    z-index: 0;
-    width: 400px;
-    height: 609px;
-    opacity: 0;
     position: absolute;
     top: 0;
     right: 15%;
     bottom: 0;
     left: auto;
-    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     svg {
-        width: 100%;
-        height: auto;
-        bottom: 0;
-        transform: rotateZ(15deg);
-    }
+        width: 510px;
+        height: 510px;
+        transform: rotateZ(10deg);
 
-    .solid-logo {
-        position: absolute;
-        top: auto;
-        right: auto;
-        bottom: auto;
-        left: 0;
-        margin: auto;
-        width: 100%;
-        opacity: 0;
-        // transform: rotateZ(15deg);
-        z-index: 1;
+        text {
+            font-size: 700px;
+        }
     }
+}
+
+.solid-logo {
+    position: absolute;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: 0;
+    margin: auto;
+    z-index: 1;
+    animation: graduate-opacity 8s;
 }
 
 .svg-container text {
     stroke: #ffd700;
     stroke-width: 0.5;
-    stroke-dasharray: 100;
-    stroke-dashoffset: 10;
-    animation: dash 5s linear forwards;
+    stroke-dasharray: 2060;
+    stroke-dashoffset: 100;
+    animation: dash 7s linear normal;
 
     @keyframes dash {
         from {
-            stroke-dashoffset: 500;
+            stroke-dashoffset: 2060;
         }
         to {
             stroke-dashoffset: 0;
         }
+    }
+}
+
+@keyframes graduate-opacity {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }
