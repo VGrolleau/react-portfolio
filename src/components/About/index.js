@@ -35,6 +35,9 @@ const About = () => {
                 </div>
 
                 <div className='stage-cube-cont'>
+                    <div id='stars'></div>
+                    <div id='stars2'></div>
+                    <div id='stars3'></div>
                     <div className='cubespinner'>
                         <div className='face1'>
                             <FontAwesomeIcon icon={faHtml5} color="#F06529" />
@@ -59,18 +62,6 @@ const About = () => {
             </div>
 
             <Loader type="pacman" />
-
-            {/* <div className='preloader' style={{ display: 'none', transform: 'translate(100 %, 0 %) matrix(1, 0, 0, 1, 0, 0)' }}>
-                <div className="inner">
-                    <img src="../../assets/images/logopreload.svg" alt="JavaScript Developer Loader, Web Developer Loader , Front End Developer Loader" />
-                    <span>Slobodan is working</span>
-                    <div className="progress-bar">
-                        <div className="progress-bar_bg">
-                            <div style={{ width: 0 }}></div>
-                        </div>
-                    </div>
-                </div>
-            </div> */}
         </>
     )
 }
