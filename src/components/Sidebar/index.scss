@@ -75,30 +75,37 @@
                 width: 100%;
                 opacity: 0;
                 transition: all 0.3s ease-out;
+                text-transform: uppercase;
             }
 
             &:first-child {
                 &::after {
-                    content: "ACCUEIL";
+                    content: "accueil";
                 }
             }
         }
 
         a.about-link {
             &:after {
-                content: "À PROPOS";
+                content: "à propos";
+            }
+        }
+
+        a.skills-link {
+            &:after {
+                content: "talents";
             }
         }
 
         a.portfolio-link {
             &:after {
-                content: "PROJETS";
+                content: "projets";
             }
         }
 
         a.contact-link {
             &:after {
-                content: "CONTACT";
+                content: "contact";
             }
         }
 
