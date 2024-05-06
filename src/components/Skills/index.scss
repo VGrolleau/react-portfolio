@@ -1,0 +1,33 @@
+.text-zone {
+    .tech-tag {
+        color: #ffd700;
+
+        &::before {
+            content: " ";
+        }
+    }
+
+    p {
+        a {
+            color: #ffd700;
+            text-decoration: underline;
+
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+}
+
+.skill-charts {
+    position: absolute;
+    width: fit-content;
+    top: 0;
+    bottom: 0;
+    right: 50px;
+    height: fit-content;
+    margin: auto;
+    color: #fff;
+    font-size: 30px;
+    font-family: "Coolvetica";
+}
