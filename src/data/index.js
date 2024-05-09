@@ -1,3 +1,36 @@
+export const dataTechTags = [
+    {
+        name: 'HTML5'
+    },
+    {
+        name: 'CSS3'
+    },
+    {
+        name: 'JavaScript'
+    },
+    {
+        name: 'React'
+    },
+    {
+        name: 'Redux'
+    },
+    {
+        name: 'Jest'
+    },
+    {
+        name: 'Tailwind CSS'
+    },
+    {
+        name: 'SASS'
+    },
+    {
+        name: 'Docker'
+    },
+    {
+        name: 'Git'
+    }
+];
+
 export const dataCanvasGeneral = [
     {
         name: 'HTML5',
