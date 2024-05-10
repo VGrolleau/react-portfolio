@@ -3,6 +3,9 @@ import './index.scss';
 import Loader from 'react-loaders';
 import AnimatedLetters from '../AnimatedLetters';
 import { dataProjects } from '../../data';
+import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLongArrowAltRight } from '@fortawesome/free-solid-svg-icons';
 
 const Portfolio = () => {
     const [letterClass, setLetterClass] = useState('text-animate');
@@ -18,9 +21,29 @@ const Portfolio = () => {
     let dataOpenclassrooms = [];
 
     dataProjects.forEach(data => {
-        dataPersonal.push(data.category.personnel);
-        dataOpenclassrooms.push(data.category.openclassrooms);
+        dataPersonal.push(data.personal);
+        dataOpenclassrooms.push(data.openclassrooms);
     });
+
+    function liData(dataObject) {
+        return dataObject.map((data, index) => (
+            <li key={index}>
+                <Link to="/portfolio">
+                    <div className='project-row'>
+                        <div className='project-row-left'>
+                            <div className='project-selected-wrapper'>
+                                {<FontAwesomeIcon icon={faLongArrowAltRight} className='project-selected' />}
+                            </div>
+                            <p>{data.name}</p>
+                        </div>
+                        <div className='project-row-right'>
+                            <p>{data.skills[0]}</p>
+                        </div>
+                    </div>
+                </Link>
+            </li>
+        ))
+    }
 
     return (
         <>
@@ -30,14 +53,8 @@ const Portfolio = () => {
                         <AnimatedLetters letterClass={letterClass} charactersArray={titleArray} index={10} />
                     </h1>
                     <ul>
-                        {
-                            dataPersonal.map((data) => {
-                                console.log(data);
-                                return (
-                                    <li key={data}>{data.name}</li>
-                                )
-                            })
-                        }
+                        {liData(dataPersonal[0])}
+                        {liData(dataOpenclassrooms[0])}
                     </ul>
                 </div>
             </div>
