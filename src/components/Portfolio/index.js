@@ -28,7 +28,7 @@ const Portfolio = () => {
     function liData(dataObject) {
         return dataObject.map((data, index) => (
             <li key={index}>
-                <Link to="/portfolio">
+                <Link to={{ pathname: "/portfolio", state: data }}>
                     <div className='project-row'>
                         <div className='project-row-left'>
                             <div className='project-selected-wrapper'>
@@ -57,6 +57,7 @@ const Portfolio = () => {
                         {liData(dataOpenclassrooms[0])}
                     </ul>
                 </div>
+                <div className='project-overview'></div>
             </div>
             <Loader type='pacman' />
         </>
