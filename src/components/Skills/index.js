@@ -3,7 +3,7 @@ import './index.scss';
 import { useEffect, useState } from 'react';
 import AnimatedLetters from '../AnimatedLetters';
 import cv from '../../assets/documents/cv-grolleau-virginie-alternance.pdf';
-import WordCloud from '../WordCloud';
+import WordCloud from './WordCloud';
 import { dataTechTags } from '../../data';
 
 const Skills = () => {
