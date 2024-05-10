@@ -1,8 +1,0 @@
-<svg width="250" height="290" xmlns="http://www.w3.org/2000/svg">
-    <!-- Premier dessin: les "V" empilés -->
-    <text x="15" y="210" font-family="Arial" font-size="300" fill="#ffd700">V</text>
-    <text x="25" y="205" font-family="Arial" font-size="300" fill="#115173">V</text>
-
-    <!-- Deuxième dessin: le texte "Virginie" -->
-    <text x="0" y="270" font-family="Arial" font-size="75" fill="white" stroke="none">Virginie</text>
-</svg>
