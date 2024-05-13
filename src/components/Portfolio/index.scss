@@ -1,1 +1,14 @@
+.portfolio-page {
+    .text-zone {
+        max-height: 60%;
 
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            overflow-y: auto;
+            height: 100%;
+            scrollbar-width: none;
+        }
+    }
+}

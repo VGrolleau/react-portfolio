@@ -48,8 +48,8 @@
         top: 50%;
         transform: translateY(-50%);
         width: 35%;
-        vertical-align: middle;
-        display: table-cell;
+        display: flex;
+        flex-direction: column;
         max-height: 90%;
 
         h1 {

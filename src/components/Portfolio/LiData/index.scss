@@ -1,0 +1,26 @@
+li {
+    opacity: 0;
+    animation: fadeInUp 2s 2s;
+    animation-fill-mode: forwards;
+
+    a {
+        text-decoration: none;
+
+        .project-row {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .project-row-left {
+                display: flex;
+                align-items: center;
+
+                .project-selected-wrapper {
+                    position: absolute;
+                    overflow: hidden;
+                }
+            }
+        }
+    }
+}
