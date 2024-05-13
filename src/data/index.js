@@ -157,7 +157,7 @@ export const dataProjects = [
                         other: ''
                     }
                 },
-                imageURL: "%PUBLIC_URL%/bataille.png"
+                imageURL: "assets/images/projects/bataille.png"
             },
             {
                 name: "Promenade en forêt",
@@ -188,7 +188,7 @@ export const dataProjects = [
                         other: ''
                     }
                 },
-                imageURL: "%PUBLIC_URL%/promenade-en-foret.png"
+                imageURL: "assets/images/projects/promenade-en-foret.png"
             },
             {
                 name: "Casse-briques",
@@ -218,7 +218,7 @@ export const dataProjects = [
                         other: ''
                     }
                 },
-                imageURL: "%PUBLIC_URL%/casse-briques.png"
+                imageURL: "assets/images/projects/casse-briques.png"
             },
             {
                 name: "Memory panda",
@@ -249,7 +249,7 @@ export const dataProjects = [
                         other: ''
                     }
                 },
-                imageURL: "%PUBLIC_URL%/memory-panda.png"
+                imageURL: "assets/images/projects/memory-panda.png"
             }
         ],
         openclassrooms: [
@@ -292,7 +292,7 @@ export const dataProjects = [
                         other: 'https://www.npmjs.com/package/dropdown-menu-component'
                     }
                 },
-                imageURL: "%PUBLIC_URL%/HRnet.png"
+                imageURL: "assets/images/projects/HRnet.png"
             },
             {
                 name: "ArgentBank",
@@ -330,7 +330,7 @@ export const dataProjects = [
                         other: ''
                     }
                 },
-                imageURL: "%PUBLIC_URL%/argentBank.png"
+                imageURL: "assets/images/projects/argentBank.png"
             },
             {
                 name: "SportSee",
@@ -361,7 +361,7 @@ export const dataProjects = [
                         other: ''
                     }
                 },
-                imageURL: "%PUBLIC_URL%/sportSee.png"
+                imageURL: "assets/images/projects/sportSee.png"
             },
             {
                 name: "Kasa",
@@ -405,7 +405,7 @@ export const dataProjects = [
                         other: ''
                     }
                 },
-                imageURL: "%PUBLIC_URL%/kasa.png"
+                imageURL: "assets/images/projects/kasa.png"
             },
             {
                 name: "Learn@Home",
@@ -435,7 +435,7 @@ export const dataProjects = [
                         other: ''
                     }
                 },
-                imageURL: "%PUBLIC_URL%/learnAtHome.png"
+                imageURL: "assets/images/projects/learnAtHome.png"
             },
             {
                 name: "Billed",
@@ -463,7 +463,7 @@ export const dataProjects = [
                         other: ''
                     }
                 },
-                imageURL: "%PUBLIC_URL%/billed.png"
+                imageURL: "assets/images/projects/billed.png"
             },
             {
                 name: "Les petits plats",
@@ -497,7 +497,7 @@ export const dataProjects = [
                         other: ''
                     }
                 },
-                imageURL: "%PUBLIC_URL%/les-petits-plats.png"
+                imageURL: "assets/images/projects/les-petits-plats.png"
             },
             {
                 name: "FishEye",
@@ -531,7 +531,7 @@ export const dataProjects = [
                         other: ''
                     }
                 },
-                imageURL: "%PUBLIC_URL%/fisheye.png"
+                imageURL: "assets/images/projects/fisheye.png"
             },
             {
                 name: "GameOn",
@@ -561,7 +561,7 @@ export const dataProjects = [
                         other: ''
                     }
                 },
-                imageURL: "%PUBLIC_URL%/gameOn.png"
+                imageURL: "assets/images/projects/gameOn.png"
             },
             {
                 name: "Ohmyfood",
@@ -592,7 +592,7 @@ export const dataProjects = [
                         other: ''
                     }
                 },
-                imageURL: "%PUBLIC_URL%/ohmyfood.png"
+                imageURL: "assets/images/projects/ohmyfood.png"
             },
             {
                 name: "Booki",
@@ -621,7 +621,7 @@ export const dataProjects = [
                         other: ''
                     }
                 },
-                imageURL: "%PUBLIC_URL%/booki.png"
+                imageURL: "assets/images/projects/booki.png"
             }
         ]
     }
