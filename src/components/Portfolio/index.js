@@ -3,9 +3,6 @@ import './index.scss';
 import Loader from 'react-loaders';
 import AnimatedLetters from '../AnimatedLetters';
 import { dataProjects } from '../../data';
-// import { Link } from 'react-router-dom';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { faLongArrowAltRight } from '@fortawesome/free-solid-svg-icons';
 import LiData from './LiData';
 
 const Portfolio = () => {
@@ -26,26 +23,6 @@ const Portfolio = () => {
         dataOpenclassrooms.push(data.openclassrooms);
     });
 
-    // function liData(dataObject) {
-    //     return dataObject.map((data, index) => (
-    //         <li key={index}>
-    //             <Link to={{ pathname: "/portfolio", state: data }}>
-    //                 <div className='project-row'>
-    //                     <div className='project-row-left'>
-    //                         <div className='project-selected-wrapper'>
-    //                             {<FontAwesomeIcon icon={faLongArrowAltRight} className='project-selected' style={{ transform: 'translateX(-100 %) translateZ(0px)' }} />}
-    //                         </div>
-    //                         <p>{data.name}</p>
-    //                     </div>
-    //                     <div className='project-row-right'>
-    //                         <p>{data.skills[0]}</p>
-    //                     </div>
-    //                 </div>
-    //             </Link>
-    //         </li>
-    //     ))
-    // }
-
     return (
         <>
             <div className='container portfolio-page'>
@@ -54,10 +31,8 @@ const Portfolio = () => {
                         <AnimatedLetters letterClass={letterClass} charactersArray={titleArray} index={10} />
                     </h1>
                     <ul>
-                        <LiData dataObject={dataPersonal[0]} />
-                        <LiData dataObject={dataOpenclassrooms[0]} />
-                        {/* {liData(dataPersonal[0])}
-                        {liData(dataOpenclassrooms[0])} */}
+                        <LiData category="personal" dataObject={dataPersonal[0]} />
+                        <LiData category="openclassrooms" dataObject={dataOpenclassrooms[0]} />
                     </ul>
                 </div>
                 <div className='project-overview'></div>

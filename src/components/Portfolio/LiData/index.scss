@@ -19,7 +19,18 @@ li {
                 .project-selected-wrapper {
                     position: absolute;
                     overflow: hidden;
+
+                    .project-selected {
+                        color: white;
+                        padding-right: 12px;
+                        position: relative;
+                        transform: translateX(-100%) translateZ(0);
+                    }
                 }
+            }
+
+            .project-row-right {
+                padding-right: 10px;
             }
         }
     }
