@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
-import './index.scss';
+import './Portfolio.scss';
 import Loader from 'react-loaders';
-import AnimatedLetters from '../AnimatedLetters';
 import { dataProjects } from '../../data';
-import LiData from './LiData';
+import AnimatedLetters from '../../components/AnimatedLetters/AnimatedLetters';
+import LiData from '../../components/LiData/LiData';
 
 const Portfolio = () => {
     const [letterClass, setLetterClass] = useState('text-animate');

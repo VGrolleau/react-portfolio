@@ -1,10 +1,10 @@
 import { useState } from 'react';
-import AnimatedLetters from '../AnimatedLetters';
-import './index.scss';
+import './About.scss';
 import { useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCss3Alt, faGitAlt, faHtml5, faJsSquare, faReact, faSass } from '@fortawesome/free-brands-svg-icons';
 import Loader from 'react-loaders';
+import AnimatedLetters from '../../components/AnimatedLetters/AnimatedLetters';
 
 const About = () => {
     const [letterClass, setLetterClass] = useState('text-animate');

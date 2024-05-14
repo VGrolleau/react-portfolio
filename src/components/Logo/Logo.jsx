@@ -1,4 +1,4 @@
-import './index.scss';
+import './Logo.scss';
 
 const Logo = () => {
     return (

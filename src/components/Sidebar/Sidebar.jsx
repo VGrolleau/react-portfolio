@@ -1,5 +1,5 @@
 import { Link, NavLink } from 'react-router-dom';
-import './index.scss';
+import './Sidebar.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faGear, faHome, faSuitcase, faUser } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';

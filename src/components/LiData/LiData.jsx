@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import './index.scss';
+import './LiData.scss';
 import { faLongArrowAltRight } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 

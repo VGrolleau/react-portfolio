@@ -1,11 +1,11 @@
 import './App.scss';
-import About from './components/About/index.js';
-import Contact from './components/Contact/index.js';
-import Home from './components/Home/index.js';
-import Layout from './components/Layout/index.js';
-import Skills from './components/Skills/index.js';
-import Portfolio from './components/Portfolio/index.js';
 import { Route, Routes } from 'react-router-dom';
+import Layout from './components/Layout/Layout';
+import Home from './pages/Home/Home';
+import About from './pages/About/About';
+import Skills from './pages/Skills/Skills';
+import Portfolio from './pages/Portfolio/Portfolio';
+import Contact from './pages/Contact/Contact';
 
 function App() {
   return (

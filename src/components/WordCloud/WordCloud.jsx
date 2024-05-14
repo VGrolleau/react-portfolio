@@ -1,6 +1,6 @@
-import './index.scss';
+import './WordCloud.scss';
 import { useEffect, useRef } from "react";
-import { dataCanvasGeneral } from "../../../data";
+import { dataCanvasGeneral } from "../../data";
 import TagCloud from "TagCloud";
 
 const container = '.skill-charts';
