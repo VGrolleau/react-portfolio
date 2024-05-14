@@ -9,6 +9,7 @@ const Portfolio = () => {
     const [letterClass, setLetterClass] = useState('text-animate');
     const titleArray = ['M', 'e', 's', ' ', 'p', 'r', 'o', 'j', 'e', 't', 's'];
     const [activeLiIndex, setActiveLiIndex] = useState(null);
+    const [animationKey, setAnimationKey] = useState(0);
 
     useEffect(() => {
         setTimeout(() => {
@@ -46,18 +47,20 @@ const Portfolio = () => {
                             dataObject={dataPersonal[0]}
                             activeLiIndex={activeLiIndex}
                             setActiveLiIndex={setActiveLiIndex}
+                            setAnimationKey={setAnimationKey}
                         />
                         <LiData
                             category="openclassrooms"
                             dataObject={dataOpenclassrooms[0]}
                             activeLiIndex={activeLiIndex}
                             setActiveLiIndex={setActiveLiIndex}
+                            setAnimationKey={setAnimationKey}
                         />
                     </ul>
                 </div>
                 <div className="project-overview">
                     {
-                        getImageUrl() && <img className='overview' src={require(`../../${getImageUrl()}`)} alt='Aperçu projet' />
+                        getImageUrl() && <img key={animationKey} className='overview' src={require(`../../${getImageUrl()}`)} alt='Aperçu projet' />
                     }
                 </div>
             </div>

@@ -128,7 +128,6 @@ export const dataCanvasGeneral = [
 
 export const dataProjects = [
     {
-        // category: {
         personal: [
             {
                 name: "La bataille",
@@ -625,5 +624,4 @@ export const dataProjects = [
             }
         ]
     }
-    // }
 ]

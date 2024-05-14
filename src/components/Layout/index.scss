@@ -24,15 +24,14 @@
 }
 
 .container {
-    width: 100%;
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     will-change: contents;
-    height: 90%;
-    min-height: 566px;
-    position: absolute;
     opacity: 0;
-    top: 5%;
-    margin: 0 auto;
-    z-index: 1;
+    margin-left: 10%;
     transform-style: preserve-3d;
     animation: fadeIn 1s forwards;
     animation-delay: 1s;
@@ -43,10 +42,6 @@
 .skills-page,
 .portfolio-page {
     .text-zone {
-        position: absolute;
-        left: 10%;
-        top: 50%;
-        transform: translateY(-50%);
         width: 35%;
         display: flex;
         flex-direction: column;

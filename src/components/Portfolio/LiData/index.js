@@ -3,11 +3,10 @@ import './index.scss';
 import { faLongArrowAltRight } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 
-const LiData = (props) => {
-    const { category, dataObject, activeLiIndex, setActiveLiIndex } = props;
-
+const LiData = ({ category, dataObject, activeLiIndex, setActiveLiIndex, setAnimationKey }) => {
     const handleMouseEnter = (category, index) => {
         setActiveLiIndex(`${category}-${index}`);
+        setAnimationKey(prevKey => prevKey + 1);
     }
 
     const handleMouseLeave = () => {
