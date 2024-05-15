@@ -8,8 +8,6 @@ const Modal = ({ selectedData, onClose }) => {
     let descriptionText = data.description.text;
     let descriptionLi = data.description.li;
 
-    console.log(descriptionLi[0].content !== "");
-
     let categoryName = category;
     switch (categoryName) {
         case "personal":
@@ -37,13 +35,31 @@ const Modal = ({ selectedData, onClose }) => {
 
                 <div>
                     <p>{descriptionText}</p>
-
                     {
-                        descriptionLi.content !== "" ?
+                        descriptionLi[0].content !== "" ?
                             <ul>
-                                <li>test</li>
+                                {
+                                    descriptionLi.map((li, index) =>
+                                        <li key={index}>
+                                            {li.content}
+                                            {
+                                                li.sublevel.length !== 0 ?
+                                                    <ul>
+                                                        {
+                                                            li.sublevel.map((liSub, indexSub) =>
+                                                                <li key={indexSub}>{liSub}</li>
+                                                            )
+                                                        }
+                                                    </ul>
+                                                    :
+                                                    null
+                                            }
+                                        </li>
+                                    )
+                                }
                             </ul>
-                            : null
+                            :
+                            null
                     }
                 </div>
 

@@ -258,16 +258,16 @@ export const dataProjects = [
                     text: "Projet basé sur une application web interne qui gère les dossiers des employés d’une grande société financière. L’objectif est de mettre à jour le site, à savoir le passer de JQuery à React. Voici un récapitulatif des principales tâches:",
                     li: [
                         {
-                            index: 1,
-                            content: "Convertir l’ensemble du projet en React."
+                            content: "Convertir l’ensemble du projet en React.",
+                            sublevel: []
                         },
                         {
-                            index: 2,
-                            content: "Convertir l’un des quatre plugins jQuery actuels en React. Remplacer les 3 plugins jQuery restants par des composants React soit en les codant, soit en les important depuis des libraires existantes."
+                            content: "Convertir l’un des quatre plugins jQuery actuels en React. Remplacer les 3 plugins jQuery restants par des composants React soit en les codant, soit en les important depuis des libraires existantes.",
+                            sublevel: []
                         },
                         {
-                            index: 3,
-                            content: "Effectuer des tests de performance Lighthouse en comparant l’ancienne et la nouvelle application."
+                            content: "Effectuer des tests de performance Lighthouse en comparant l’ancienne et la nouvelle application.",
+                            sublevel: []
                         }
                     ]
                 },
