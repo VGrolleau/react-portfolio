@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './Modal.scss';
-import { faClose } from '@fortawesome/free-solid-svg-icons';
+import { faClose, faLink } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
@@ -33,15 +33,15 @@ const Modal = ({ selectedData, onClose }) => {
         for (let key in obj) {
             if (typeof obj[key] === 'object') {
                 if (!areAllFieldsEmpty(obj[key])) {
-                    return false; // Si un champ n'est pas vide, retourne false
+                    return false;
                 }
             } else {
                 if (obj[key] !== '') {
-                    return false; // Si un champ n'est pas vide, retourne false
+                    return false;
                 }
             }
         }
-        return true; // Si tous les champs sont vides, retourne true
+        return true;
     };
 
     return (
@@ -110,42 +110,56 @@ const Modal = ({ selectedData, onClose }) => {
                         <div>
                             <h3>Liens</h3>
 
-                            {
-                                areAllFieldsEmpty(linksGithub) ?
-                                    null
-                                    :
-                                    (
-                                        <div>
-                                            {
-                                                linksGithub.frontend === '' ? null :
-                                                    <Link to={linksGithub.frontend}>
-                                                        <FontAwesomeIcon icon={faGithub} /> Frontend
-                                                    </Link>
-                                            }
-                                            {
-                                                linksGithub.backend === '' ? null :
-                                                    <Link to={linksGithub.backend}>
-                                                        <FontAwesomeIcon icon={faGithub} /> Backend
-                                                    </Link>
-                                            }
-                                            {
-                                                linksGithub.other === '' ? null :
-                                                    <Link to={linksGithub.other}>
-                                                        <FontAwesomeIcon icon={faGithub} /> Autre
-                                                    </Link>
-                                            }
-                                        </div>
-                                    )
-                            }
-                            {
-                                areAllFieldsEmpty(linksSite) ?
-                                    null
-                                    :
-                                    (
-                                        <div>
-                                        </div>
-                                    )
-                            }
+                            <div>
+                                {
+                                    areAllFieldsEmpty(linksGithub) ?
+                                        null
+                                        :
+                                        (
+                                            <>
+                                                {
+                                                    linksGithub.frontend.url === "" ? null :
+                                                        <Link to={linksGithub.frontend.url}>
+                                                            <FontAwesomeIcon icon={faGithub} /> {linksGithub.frontend.text}
+                                                        </Link>
+                                                }
+                                                {
+                                                    linksGithub.backend.url === "" ? null :
+                                                        <Link to={linksGithub.backend.url}>
+                                                            <FontAwesomeIcon icon={faGithub} /> {linksGithub.backend.text}
+                                                        </Link>
+                                                }
+                                                {
+                                                    linksGithub.other.url === "" ? null :
+                                                        <Link to={linksGithub.other.url}>
+                                                            <FontAwesomeIcon icon={faGithub} /> {linksGithub.other.text}
+                                                        </Link>
+                                                }
+                                            </>
+                                        )
+                                }
+                                {
+                                    areAllFieldsEmpty(linksSite) ?
+                                        null
+                                        :
+                                        (
+                                            <>
+                                                {
+                                                    linksSite.app.url === "" ? null :
+                                                        <Link to={linksSite.app.url}>
+                                                            <FontAwesomeIcon icon={faLink} /> {linksSite.app.text}
+                                                        </Link>
+                                                }
+                                                {
+                                                    linksSite.other.url === "" ? null :
+                                                        <Link to={linksSite.other.url}>
+                                                            <FontAwesomeIcon icon={faLink} /> {linksSite.other.text}
+                                                        </Link>
+                                                }
+                                            </>
+                                        )
+                                }
+                            </div>
                         </div>
                 }
             </div>

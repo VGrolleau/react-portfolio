@@ -147,13 +147,28 @@ export const dataProjects = [
                 ],
                 links: {
                     github: {
-                        frontend: 'https://github.com/VGrolleau/war-card-game',
-                        backend: '',
-                        other: ''
+                        frontend: {
+                            text: "Frontend",
+                            url: "https://github.com/VGrolleau/war-card-game"
+                        },
+                        backend: {
+                            text: "",
+                            url: ""
+                        },
+                        other: {
+                            text: "",
+                            url: ""
+                        }
                     },
                     site: {
-                        app: 'https://virginiegrolleau.com/sites/jeux/war-card-game/',
-                        other: ''
+                        app: {
+                            text: "Site La bataille",
+                            url: "https://virginiegrolleau.com/sites/jeux/war-card-game/"
+                        },
+                        other: {
+                            text: "",
+                            url: ""
+                        }
                     }
                 },
                 imageURL: "assets/images/projects/bataille.png"
@@ -178,13 +193,28 @@ export const dataProjects = [
                 ],
                 links: {
                     github: {
-                        frontend: 'https://github.com/VGrolleau/forest-game',
-                        backend: '',
-                        other: ''
+                        frontend: {
+                            text: "",
+                            url: "https://github.com/VGrolleau/forest-game"
+                        },
+                        backend: {
+                            text: "",
+                            url: ""
+                        },
+                        other: {
+                            text: "",
+                            url: ""
+                        }
                     },
                     site: {
-                        app: 'https://virginiegrolleau.com/sites/jeux/forest-game/',
-                        other: ''
+                        app: {
+                            text: "",
+                            url: "https://virginiegrolleau.com/sites/jeux/forest-game/"
+                        },
+                        other: {
+                            text: "",
+                            url: ""
+                        }
                     }
                 },
                 imageURL: "assets/images/projects/promenade-en-foret.png"
@@ -208,13 +238,28 @@ export const dataProjects = [
                 ],
                 links: {
                     github: {
-                        frontend: 'https://github.com/VGrolleau/casse-briques',
-                        backend: '',
-                        other: ''
+                        frontend: {
+                            text: "",
+                            url: "https://github.com/VGrolleau/casse-briques"
+                        },
+                        backend: {
+                            text: "",
+                            url: ""
+                        },
+                        other: {
+                            text: "",
+                            url: ""
+                        }
                     },
                     site: {
-                        app: 'https://virginiegrolleau.com/sites/jeux/casse-briques/',
-                        other: ''
+                        app: {
+                            text: "",
+                            url: "https://virginiegrolleau.com/sites/jeux/casse-briques/"
+                        },
+                        other: {
+                            text: "",
+                            url: ""
+                        }
                     }
                 },
                 imageURL: "assets/images/projects/casse-briques.png"
@@ -239,13 +284,28 @@ export const dataProjects = [
                 ],
                 links: {
                     github: {
-                        frontend: 'https://github.com/VGrolleau/memory-panda',
-                        backend: '',
-                        other: ''
+                        frontend: {
+                            text: "",
+                            url: "https://github.com/VGrolleau/memory-panda"
+                        },
+                        backend: {
+                            text: "",
+                            url: ""
+                        },
+                        other: {
+                            text: "",
+                            url: ""
+                        }
                     },
                     site: {
-                        app: 'https://virginiegrolleau.com/sites/jeux/memory-panda/',
-                        other: ''
+                        app: {
+                            text: "",
+                            url: "https://virginiegrolleau.com/sites/jeux/memory-panda/"
+                        },
+                        other: {
+                            text: "",
+                            url: ""
+                        }
                     }
                 },
                 imageURL: "assets/images/projects/memory-panda.png"
@@ -282,12 +342,18 @@ export const dataProjects = [
                 ],
                 links: {
                     github: {
-                        frontend: 'https://github.com/VGrolleau/p14-hrnet-v2-front',
+                        frontend: {
+                            text: "",
+                            url: "https://github.com/VGrolleau/p14-hrnet-v2-front"
+                        },
                         backend: 'https://github.com/VGrolleau/p14-hrnet-v2-back',
                         other: 'https://github.com/VGrolleau/dropdown-menu-component'
                     },
                     site: {
-                        app: '',
+                        app: {
+                            text: "",
+                            url: ""
+                        },
                         other: 'https://www.npmjs.com/package/dropdown-menu-component'
                     }
                 },
@@ -320,13 +386,25 @@ export const dataProjects = [
                 ],
                 links: {
                     github: {
-                        frontend: 'https://github.com/VGrolleau/p13-argentbank-frontend',
+                        frontend: {
+                            text: "",
+                            url: "https://github.com/VGrolleau/p13-argentbank-frontend"
+                        },
                         backend: 'https://github.com/VGrolleau/P13-ArgentBank-API',
-                        other: ''
+                        other: {
+                            text: "",
+                            url: ""
+                        }
                     },
                     site: {
-                        app: '',
-                        other: ''
+                        app: {
+                            text: "",
+                            url: ""
+                        },
+                        other: {
+                            text: "",
+                            url: ""
+                        }
                     }
                 },
                 imageURL: "assets/images/projects/argentBank.png"
@@ -351,13 +429,25 @@ export const dataProjects = [
                 ],
                 links: {
                     github: {
-                        frontend: 'https://github.com/VGrolleau/P12-SportSee-Front',
+                        frontend: {
+                            text: "",
+                            url: "https://github.com/VGrolleau/P12-SportSee-Front"
+                        },
                         backend: 'https://github.com/VGrolleau/P12-SportSee-Back',
-                        other: ''
+                        other: {
+                            text: "",
+                            url: ""
+                        }
                     },
                     site: {
-                        app: '',
-                        other: ''
+                        app: {
+                            text: "",
+                            url: ""
+                        },
+                        other: {
+                            text: "",
+                            url: ""
+                        }
                     }
                 },
                 imageURL: "assets/images/projects/sportSee.png"
@@ -395,13 +485,28 @@ export const dataProjects = [
                 ],
                 links: {
                     github: {
-                        frontend: 'https://github.com/VGrolleau/kasa',
-                        backend: '',
-                        other: ''
+                        frontend: {
+                            text: "",
+                            url: "https://github.com/VGrolleau/kasa"
+                        },
+                        backend: {
+                            text: "",
+                            url: ""
+                        },
+                        other: {
+                            text: "",
+                            url: ""
+                        }
                     },
                     site: {
-                        app: 'https://vgrolleau.github.io/kasa/',
-                        other: ''
+                        app: {
+                            text: "",
+                            url: "https://vgrolleau.github.io/kasa/"
+                        },
+                        other: {
+                            text: "",
+                            url: ""
+                        }
                     }
                 },
                 imageURL: "assets/images/projects/kasa.png"
@@ -425,13 +530,28 @@ export const dataProjects = [
                 ],
                 links: {
                     github: {
-                        frontend: '',
-                        backend: '',
-                        other: ''
+                        frontend: {
+                            text: "",
+                            url: ""
+                        },
+                        backend: {
+                            text: "",
+                            url: ""
+                        },
+                        other: {
+                            text: "",
+                            url: ""
+                        }
                     },
                     site: {
-                        app: '',
-                        other: ''
+                        app: {
+                            text: "",
+                            url: ""
+                        },
+                        other: {
+                            text: "",
+                            url: ""
+                        }
                     }
                 },
                 imageURL: "assets/images/projects/learnAtHome.png"
@@ -453,13 +573,28 @@ export const dataProjects = [
                 ],
                 links: {
                     github: {
-                        frontend: 'https://github.com/VGrolleau/Billed-app-FR-Front',
-                        backend: '',
-                        other: ''
+                        frontend: {
+                            text: "",
+                            url: "https://github.com/VGrolleau/Billed-app-FR-Front"
+                        },
+                        backend: {
+                            text: "",
+                            url: ""
+                        },
+                        other: {
+                            text: "",
+                            url: ""
+                        }
                     },
                     site: {
-                        app: '',
-                        other: ''
+                        app: {
+                            text: "",
+                            url: ""
+                        },
+                        other: {
+                            text: "",
+                            url: ""
+                        }
                     }
                 },
                 imageURL: "assets/images/projects/billed.png"
@@ -487,13 +622,28 @@ export const dataProjects = [
                 ],
                 links: {
                     github: {
-                        frontend: 'https://github.com/VGrolleau/les-petits-plats',
-                        backend: '',
-                        other: ''
+                        frontend: {
+                            text: "",
+                            url: "https://github.com/VGrolleau/les-petits-plats"
+                        },
+                        backend: {
+                            text: "",
+                            url: ""
+                        },
+                        other: {
+                            text: "",
+                            url: ""
+                        }
                     },
                     site: {
-                        app: 'https://vgrolleau.github.io/les-petits-plats/',
-                        other: ''
+                        app: {
+                            text: "",
+                            url: "https://vgrolleau.github.io/les-petits-plats/"
+                        },
+                        other: {
+                            text: "",
+                            url: ""
+                        }
                     }
                 },
                 imageURL: "assets/images/projects/les-petits-plats.png"
@@ -521,13 +671,28 @@ export const dataProjects = [
                 ],
                 links: {
                     github: {
-                        frontend: 'https://github.com/VGrolleau/Front-End-Fisheye',
-                        backend: '',
-                        other: ''
+                        frontend: {
+                            text: "",
+                            url: "https://github.com/VGrolleau/Front-End-Fisheye"
+                        },
+                        backend: {
+                            text: "",
+                            url: ""
+                        },
+                        other: {
+                            text: "",
+                            url: ""
+                        }
                     },
                     site: {
-                        app: 'https://vgrolleau.github.io/Front-End-Fisheye/',
-                        other: ''
+                        app: {
+                            text: "",
+                            url: "https://vgrolleau.github.io/Front-End-Fisheye/"
+                        },
+                        other: {
+                            text: "",
+                            url: ""
+                        }
                     }
                 },
                 imageURL: "assets/images/projects/fisheye.png"
@@ -551,13 +716,28 @@ export const dataProjects = [
                 ],
                 links: {
                     github: {
-                        frontend: 'https://github.com/VGrolleau/GameOn-website-FR',
-                        backend: '',
-                        other: ''
+                        frontend: {
+                            text: "",
+                            url: "https://github.com/VGrolleau/GameOn-website-FR"
+                        },
+                        backend: {
+                            text: "",
+                            url: ""
+                        },
+                        other: {
+                            text: "",
+                            url: ""
+                        }
                     },
                     site: {
-                        app: 'https://vgrolleau.github.io/GameOn-website-FR/',
-                        other: ''
+                        app: {
+                            text: "",
+                            url: "https://vgrolleau.github.io/GameOn-website-FR/"
+                        },
+                        other: {
+                            text: "",
+                            url: ""
+                        }
                     }
                 },
                 imageURL: "assets/images/projects/gameOn.png"
@@ -582,13 +762,28 @@ export const dataProjects = [
                 ],
                 links: {
                     github: {
-                        frontend: 'https://github.com/VGrolleau/VirginieGrolleau_3_02032022',
-                        backend: '',
-                        other: ''
+                        frontend: {
+                            text: "",
+                            url: "https://github.com/VGrolleau/VirginieGrolleau_3_02032022"
+                        },
+                        backend: {
+                            text: "",
+                            url: ""
+                        },
+                        other: {
+                            text: "",
+                            url: ""
+                        }
                     },
                     site: {
-                        app: 'https://vgrolleau.github.io/VirginieGrolleau_3_02032022/',
-                        other: ''
+                        app: {
+                            text: "",
+                            url: "https://vgrolleau.github.io/VirginieGrolleau_3_02032022/"
+                        },
+                        other: {
+                            text: "",
+                            url: ""
+                        }
                     }
                 },
                 imageURL: "assets/images/projects/ohmyfood.png"
@@ -611,13 +806,28 @@ export const dataProjects = [
                 ],
                 links: {
                     github: {
-                        frontend: '',
-                        backend: '',
-                        other: ''
+                        frontend: {
+                            text: "",
+                            url: ""
+                        },
+                        backend: {
+                            text: "",
+                            url: ""
+                        },
+                        other: {
+                            text: "",
+                            url: ""
+                        }
                     },
                     site: {
-                        app: 'https://virginiegrolleau.com/sites/openclassrooms/booki/index.html',
-                        other: ''
+                        app: {
+                            text: "",
+                            url: "https://virginiegrolleau.com/sites/openclassrooms/booki/index.html"
+                        },
+                        other: {
+                            text: "",
+                            url: ""
+                        }
                     }
                 },
                 imageURL: "assets/images/projects/booki.png"
