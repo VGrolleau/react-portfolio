@@ -1,6 +1,8 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './Modal.scss';
 import { faClose } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 const Modal = ({ selectedData, onClose }) => {
     const { data, category } = selectedData;
@@ -23,6 +25,24 @@ const Modal = ({ selectedData, onClose }) => {
 
     let descriptionText = data.description.text;
     let descriptionLi = data.description.li;
+
+    let linksGithub = data.links.github;
+    let linksSite = data.links.site;
+
+    const areAllFieldsEmpty = (obj) => {
+        for (let key in obj) {
+            if (typeof obj[key] === 'object') {
+                if (!areAllFieldsEmpty(obj[key])) {
+                    return false; // Si un champ n'est pas vide, retourne false
+                }
+            } else {
+                if (obj[key] !== '') {
+                    return false; // Si un champ n'est pas vide, retourne false
+                }
+            }
+        }
+        return true; // Si tous les champs sont vides, retourne true
+    };
 
     return (
         <div className='modal-wrapper'>
@@ -82,6 +102,52 @@ const Modal = ({ selectedData, onClose }) => {
                             null
                     }
                 </div>
+
+                {
+                    areAllFieldsEmpty(linksGithub) && areAllFieldsEmpty(linksSite) ?
+                        null
+                        :
+                        <div>
+                            <h3>Liens</h3>
+
+                            {
+                                areAllFieldsEmpty(linksGithub) ?
+                                    null
+                                    :
+                                    (
+                                        <div>
+                                            {
+                                                linksGithub.frontend === '' ? null :
+                                                    <Link to={linksGithub.frontend}>
+                                                        <FontAwesomeIcon icon={faGithub} /> Frontend
+                                                    </Link>
+                                            }
+                                            {
+                                                linksGithub.backend === '' ? null :
+                                                    <Link to={linksGithub.backend}>
+                                                        <FontAwesomeIcon icon={faGithub} /> Backend
+                                                    </Link>
+                                            }
+                                            {
+                                                linksGithub.other === '' ? null :
+                                                    <Link to={linksGithub.other}>
+                                                        <FontAwesomeIcon icon={faGithub} /> Autre
+                                                    </Link>
+                                            }
+                                        </div>
+                                    )
+                            }
+                            {
+                                areAllFieldsEmpty(linksSite) ?
+                                    null
+                                    :
+                                    (
+                                        <div>
+                                        </div>
+                                    )
+                            }
+                        </div>
+                }
             </div>
         </div>
     )
