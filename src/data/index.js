@@ -148,7 +148,7 @@ export const dataProjects = [
                 links: {
                     github: {
                         frontend: {
-                            text: "Frontend",
+                            text: "GitHub",
                             url: "https://github.com/VGrolleau/war-card-game"
                         },
                         backend: {
@@ -194,7 +194,7 @@ export const dataProjects = [
                 links: {
                     github: {
                         frontend: {
-                            text: "",
+                            text: "GitHub",
                             url: "https://github.com/VGrolleau/forest-game"
                         },
                         backend: {
@@ -208,7 +208,7 @@ export const dataProjects = [
                     },
                     site: {
                         app: {
-                            text: "",
+                            text: "Site Promenade en forêt",
                             url: "https://virginiegrolleau.com/sites/jeux/forest-game/"
                         },
                         other: {
@@ -239,7 +239,7 @@ export const dataProjects = [
                 links: {
                     github: {
                         frontend: {
-                            text: "",
+                            text: "GitHub",
                             url: "https://github.com/VGrolleau/casse-briques"
                         },
                         backend: {
@@ -253,7 +253,7 @@ export const dataProjects = [
                     },
                     site: {
                         app: {
-                            text: "",
+                            text: "Site Casse-briques",
                             url: "https://virginiegrolleau.com/sites/jeux/casse-briques/"
                         },
                         other: {
@@ -285,7 +285,7 @@ export const dataProjects = [
                 links: {
                     github: {
                         frontend: {
-                            text: "",
+                            text: "GitHub",
                             url: "https://github.com/VGrolleau/memory-panda"
                         },
                         backend: {
@@ -299,7 +299,7 @@ export const dataProjects = [
                     },
                     site: {
                         app: {
-                            text: "",
+                            text: "Site Memory panda",
                             url: "https://virginiegrolleau.com/sites/jeux/memory-panda/"
                         },
                         other: {
@@ -343,18 +343,27 @@ export const dataProjects = [
                 links: {
                     github: {
                         frontend: {
-                            text: "",
+                            text: "Frontend",
                             url: "https://github.com/VGrolleau/p14-hrnet-v2-front"
                         },
-                        backend: 'https://github.com/VGrolleau/p14-hrnet-v2-back',
-                        other: 'https://github.com/VGrolleau/dropdown-menu-component'
+                        backend: {
+                            text: "Backend",
+                            url: "https://github.com/VGrolleau/p14-hrnet-v2-back"
+                        },
+                        other: {
+                            text: "Composant menu déroulant",
+                            url: "https://github.com/VGrolleau/dropdown-menu-component"
+                        }
                     },
                     site: {
                         app: {
                             text: "",
                             url: ""
                         },
-                        other: 'https://www.npmjs.com/package/dropdown-menu-component'
+                        other: {
+                            text: "npm menu déroulant",
+                            url: "https://www.npmjs.com/package/dropdown-menu-component"
+                        }
                     }
                 },
                 imageURL: "assets/images/projects/HRnet.png"
@@ -387,10 +396,13 @@ export const dataProjects = [
                 links: {
                     github: {
                         frontend: {
-                            text: "",
+                            text: "Frontend",
                             url: "https://github.com/VGrolleau/p13-argentbank-frontend"
                         },
-                        backend: 'https://github.com/VGrolleau/P13-ArgentBank-API',
+                        backend: {
+                            text: "Backend",
+                            url: "https://github.com/VGrolleau/P13-ArgentBank-API"
+                        },
                         other: {
                             text: "",
                             url: ""
@@ -430,10 +442,13 @@ export const dataProjects = [
                 links: {
                     github: {
                         frontend: {
-                            text: "",
+                            text: "Frontend",
                             url: "https://github.com/VGrolleau/P12-SportSee-Front"
                         },
-                        backend: 'https://github.com/VGrolleau/P12-SportSee-Back',
+                        backend: {
+                            text: "Backend",
+                            url: "https://github.com/VGrolleau/P12-SportSee-Back"
+                        },
                         other: {
                             text: "",
                             url: ""
@@ -486,7 +501,7 @@ export const dataProjects = [
                 links: {
                     github: {
                         frontend: {
-                            text: "",
+                            text: "Frontend",
                             url: "https://github.com/VGrolleau/kasa"
                         },
                         backend: {
@@ -500,7 +515,7 @@ export const dataProjects = [
                     },
                     site: {
                         app: {
-                            text: "",
+                            text: "Site Kasa",
                             url: "https://vgrolleau.github.io/kasa/"
                         },
                         other: {
@@ -574,7 +589,7 @@ export const dataProjects = [
                 links: {
                     github: {
                         frontend: {
-                            text: "",
+                            text: "Frontend",
                             url: "https://github.com/VGrolleau/Billed-app-FR-Front"
                         },
                         backend: {
@@ -623,7 +638,7 @@ export const dataProjects = [
                 links: {
                     github: {
                         frontend: {
-                            text: "",
+                            text: "Frontend",
                             url: "https://github.com/VGrolleau/les-petits-plats"
                         },
                         backend: {
@@ -637,7 +652,7 @@ export const dataProjects = [
                     },
                     site: {
                         app: {
-                            text: "",
+                            text: "Site Les petits plats",
                             url: "https://vgrolleau.github.io/les-petits-plats/"
                         },
                         other: {
@@ -672,7 +687,7 @@ export const dataProjects = [
                 links: {
                     github: {
                         frontend: {
-                            text: "",
+                            text: "Frontend",
                             url: "https://github.com/VGrolleau/Front-End-Fisheye"
                         },
                         backend: {
@@ -686,7 +701,7 @@ export const dataProjects = [
                     },
                     site: {
                         app: {
-                            text: "",
+                            text: "Site FishEye",
                             url: "https://vgrolleau.github.io/Front-End-Fisheye/"
                         },
                         other: {
@@ -717,7 +732,7 @@ export const dataProjects = [
                 links: {
                     github: {
                         frontend: {
-                            text: "",
+                            text: "Frontend",
                             url: "https://github.com/VGrolleau/GameOn-website-FR"
                         },
                         backend: {
@@ -731,7 +746,7 @@ export const dataProjects = [
                     },
                     site: {
                         app: {
-                            text: "",
+                            text: "Site GameOn",
                             url: "https://vgrolleau.github.io/GameOn-website-FR/"
                         },
                         other: {
@@ -763,7 +778,7 @@ export const dataProjects = [
                 links: {
                     github: {
                         frontend: {
-                            text: "",
+                            text: "Frontend",
                             url: "https://github.com/VGrolleau/VirginieGrolleau_3_02032022"
                         },
                         backend: {
@@ -777,7 +792,7 @@ export const dataProjects = [
                     },
                     site: {
                         app: {
-                            text: "",
+                            text: "Site Ohmyfood",
                             url: "https://vgrolleau.github.io/VirginieGrolleau_3_02032022/"
                         },
                         other: {
@@ -821,7 +836,7 @@ export const dataProjects = [
                     },
                     site: {
                         app: {
-                            text: "",
+                            text: "Site Booki",
                             url: "https://virginiegrolleau.com/sites/openclassrooms/booki/index.html"
                         },
                         other: {

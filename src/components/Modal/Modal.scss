@@ -16,5 +16,114 @@
         padding: 20px;
         border-radius: 5px;
         color: white;
+        display: flex;
+        flex-direction: column;
+
+        .close-button,
+        .modal-links a {
+            width: fit-content;
+            color: #ffd700;
+            background-color: transparent;
+            padding: 5px 12px;
+            border: 1px solid #ffd700;
+
+            &:hover {
+                background: #ffd700;
+                color: #333;
+                cursor: pointer;
+            }
+        }
+
+        .close-button {
+            position: absolute;
+
+            svg {
+                height: 1.5em;
+            }
+        }
+
+        .modal-top {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+
+            img {
+                width: 60%;
+                border-radius: 5px;
+            }
+
+            .modal-top-left {
+                width: 40%;
+                display: flex;
+                flex-direction: column;
+                text-align: end;
+                padding-right: 20px;
+
+                h2 {
+                    margin: 0;
+                    font-size: 2em;
+                }
+
+                ul {
+                    list-style: none;
+                    padding-left: 20px;
+                }
+
+                .modal-category {
+                    margin: 20px 0 5px;
+                }
+            }
+        }
+
+        h3 {
+            margin: 10px 0 0;
+            font-size: 1.5em;
+        }
+
+        p {
+            margin: 5px 0 0;
+            font-size: 1.2em;
+        }
+
+        ul {
+            list-style: disc;
+            // padding-left: 20px;
+            scrollbar-width: none;
+
+            li {
+                font-size: 1.2em;
+                margin-top: 5px;
+
+                .sublevel {
+                    font-size: 1em;
+                }
+            }
+        }
+
+        .modal-description {
+            margin: 20px;
+            text-align: justify;
+        }
+
+        .modal-links {
+            margin: 20px;
+            width: 90%;
+
+            .links {
+                display: flex;
+                justify-content: space-evenly;
+                margin-top: 20px;
+
+                a {
+                    font-size: 13px;
+                    font-weight: 400;
+                    letter-spacing: 4px;
+                    font-family: sans-serif;
+                    text-decoration: none;
+                    white-space: nowrap;
+                    text-transform: uppercase;
+                }
+            }
+        }
     }
 }
