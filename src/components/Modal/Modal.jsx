@@ -5,9 +5,6 @@ import { faClose } from '@fortawesome/free-solid-svg-icons';
 const Modal = ({ selectedData, onClose }) => {
     const { data, category } = selectedData;
 
-    let descriptionText = data.description.text;
-    let descriptionLi = data.description.li;
-
     let categoryName = category;
     switch (categoryName) {
         case "personal":
@@ -22,6 +19,11 @@ const Modal = ({ selectedData, onClose }) => {
             break;
     }
 
+    let skillsList = data.skills;
+
+    let descriptionText = data.description.text;
+    let descriptionLi = data.description.li;
+
     return (
         <div className='modal-wrapper'>
             <div className='modal'>
@@ -32,6 +34,24 @@ const Modal = ({ selectedData, onClose }) => {
                 {/* <img src={require(`../../${data.imageURL}`)} alt='Image projet' /> */}
 
                 <h2>{data.name}</h2>
+
+                <div>
+                    <div>
+                        <h3>Catégorie</h3>
+                        <p>{categoryName}</p>
+                    </div>
+
+                    <div>
+                        <h3>Compétences</h3>
+                        <ul>
+                            {
+                                skillsList.map((skill, index) =>
+                                    <li key={index}>{skill}</li>
+                                )
+                            }
+                        </ul>
+                    </div>
+                </div>
 
                 <div>
                     <p>{descriptionText}</p>
@@ -61,11 +81,6 @@ const Modal = ({ selectedData, onClose }) => {
                             :
                             null
                     }
-                </div>
-
-                <div>
-                    <h3>Catégorie</h3>
-                    <p>{categoryName}</p>
                 </div>
             </div>
         </div>
