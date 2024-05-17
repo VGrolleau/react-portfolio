@@ -18,21 +18,22 @@ const LiData = ({ category, dataObject, activeLiIndex, setActiveLiIndex, setAnim
         setActiveLiIndex(null);
     }
 
-    const handleLiClick = (data, category) => {
+    const handleLiClick = (e, data, category) => {
+        e.stopPropagation();
         setSelectedData({ data, category });
         setIsModalOpen(true);
     }
 
     return (
         <>
-            {isModalOpen && <Modal selectedData={selectedData} onClose={() => setIsModalOpen(false)} />}
+            {isModalOpen && <Modal isOpen={isModalOpen} selectedData={selectedData} onClose={() => setIsModalOpen(false)} />}
             {dataObject.map((data, index) => (
                 <li
                     key={`${category}-${index + 1}`}
                     id={`${category}-${index + 1}`}
                     onMouseEnter={() => handleMouseEnter(category, index)}
                     onMouseLeave={handleMouseLeave}
-                    onClick={() => handleLiClick(data, category)}
+                    onClick={(e) => handleLiClick(e, data, category)}
                     className={activeLiIndex === `${category}-${index}` ? 'active' : ''}
                 >
                     <Link to={{ pathname: "/portfolio", state: data }}>

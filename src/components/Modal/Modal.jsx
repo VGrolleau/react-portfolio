@@ -4,7 +4,7 @@ import { faClose, faLink } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
-const Modal = ({ selectedData, onClose }) => {
+const Modal = ({ isOpen, selectedData, onClose }) => {
     const { data, category } = selectedData;
 
     let categoryName = category;
@@ -46,7 +46,7 @@ const Modal = ({ selectedData, onClose }) => {
 
     return (
         <div className='modal-wrapper'>
-            <div className='modal'>
+            <div className={`modal ${isOpen ? 'open' : ''}`}>
                 <button onClick={onClose} className='close-button'>
                     <FontAwesomeIcon icon={faClose} />
                 </button>
@@ -188,7 +188,7 @@ const Modal = ({ selectedData, onClose }) => {
                         </div>
                 }
             </div>
-        </div>
+        </div >
     )
 };
 

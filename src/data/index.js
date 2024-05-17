@@ -371,7 +371,7 @@ export const dataProjects = [
             {
                 name: "ArgentBank",
                 description: {
-                    text: "Projet basé sur le site d’une nouvelle banque qui démarre et essaie de percer dans le secteur. Le but est de mettre en place son application web permettant aux clients de se connecter et de gérer leurs comptes et leur profil.Le développement se découpe en 2 phases :",
+                    text: "Projet basé sur le site d’une nouvelle banque qui démarre et essaie de percer dans le secteur. Le but est de mettre en place son application web permettant aux clients de se connecter et de gérer leurs comptes et leur profil. Le développement se découpe en 2 phases :",
                     li: [
                         {
                             content: "Phase 1 : Authentification des utilisateurs :",
@@ -424,7 +424,7 @@ export const dataProjects = [
             {
                 name: "SportSee",
                 description: {
-                    text: "Projet basé sur le site d’une startup de coaching sportif. L’objectif est de développer la nouvelle version de la page profil de l’utilisateur.Cette page va notamment permettre à l’utilisateur de suivre le nombre de sessions réalisées ainsi que le nombre de calories brûlées. Pour ce faire, il faut intégrer des graphiques D3 ou Recharts(mon choix pour ce projet) sur l’activité sportive de l’utilisateur.Concernant les données, il faut réaliser les calls vers le back- end en NodeJS.Pour gérer ces appels, il faut utiliser soit Fetch(mon choix), soit Axios, et les réaliser en dehors des composants React via un service à part.Le site doit également disposer d’une classe de modélisation des données pour s’assurer de les formater correctement.Enfin, il faut bien documenter le code, via des capsules et des PropTypes dans ce dernier, mais également via le Readme.",
+                    text: "Projet basé sur le site d’une startup de coaching sportif. L’objectif est de développer la nouvelle version de la page profil de l’utilisateur. Cette page va notamment permettre à l’utilisateur de suivre le nombre de sessions réalisées ainsi que le nombre de calories brûlées. Pour ce faire, il faut intégrer des graphiques D3 ou Recharts (mon choix pour ce projet) sur l’activité sportive de l’utilisateur. Concernant les données, il faut réaliser les calls vers le back-end en NodeJS. Pour gérer ces appels, il faut utiliser soit Fetch (mon choix), soit Axios, et les réaliser en dehors des composants React via un service à part. Le site doit également disposer d’une classe de modélisation des données pour s’assurer de les formater correctement. Enfin, il faut bien documenter le code, via des capsules et des PropTypes dans ce dernier, mais également via le Readme.",
                     li: [
                         {
                             content: "",
@@ -470,7 +470,7 @@ export const dataProjects = [
             {
                 name: "Kasa",
                 description: {
-                    text: "Projet basé sur une plateforme web de location d’appartements entre particuliers. Le but est de démarrer le projet React et développer l’ensemble de l’application, les composants React, les routes React Router, en suivant les maquettes Figma(responsives) et toutes les infos données.Quelques précisions sur les fonctionnalités du site: ",
+                    text: "Projet basé sur une plateforme web de location d’appartements entre particuliers. Le but est de démarrer le projet React et développer l’ensemble de l’application, les composants React, les routes React Router, en suivant les maquettes Figma(responsives) et toutes les infos données. Quelques précisions sur les fonctionnalités du site: ",
                     li: [
                         {
                             content: "Pour le défilement des photos dans la galerie (composant Gallery) :",
@@ -529,7 +529,7 @@ export const dataProjects = [
             {
                 name: "Learn@Home",
                 description: {
-                    text: "Projet basé sur une application de soutien scolaire permettant aux élèves et aux bénévoles d’une association de communiquer plus facilement. L’objectif est de cadrer le projet puis de coordonner tous les développements.Pour ce faire, il faut réaliser les diagrammes de cas d’usage pour chacune des fonctionnalités majeures de chaque page, les user stories avec critère(s) d’acceptation pour chacune des fonctionnalités, les maquettes du site avec un design simple et au moins une maquette par page, et un Kanban découpant le projet.",
+                    text: "Projet basé sur une application de soutien scolaire permettant aux élèves et aux bénévoles d’une association de communiquer plus facilement. L’objectif est de cadrer le projet puis de coordonner tous les développements. Pour ce faire, il faut réaliser les diagrammes de cas d’usage pour chacune des fonctionnalités majeures de chaque page, les user stories avec critère(s) d’acceptation pour chacune des fonctionnalités, les maquettes du site avec un design simple et au moins une maquette par page, et un Kanban découpant le projet.",
                     li: [
                         {
                             content: "",
@@ -574,7 +574,7 @@ export const dataProjects = [
             {
                 name: "Billed",
                 description: {
-                    text: "Projet basé sur une application de note de frais. Le but est, dans un premier temps, de débugger le parcours administrateur, et tester et débugger entièrement le parcours employé de l’application.Pour ce faire, il faut utiliser Chrome Debugger.Dans un second temps, il faut tester le site via Jest et réaliser son plan de tests End- to - End.",
+                    text: "Projet basé sur une application de note de frais. Le but est, dans un premier temps, de débugger le parcours administrateur, et tester et débugger entièrement le parcours employé de l’application. Pour ce faire, il faut utiliser Chrome Debugger. Dans un second temps, il faut tester le site via Jest et réaliser son plan de tests End-to-End.",
                     li: [
                         {
                             content: "",
@@ -617,7 +617,7 @@ export const dataProjects = [
             {
                 name: "Les petits plats",
                 description: {
-                    text: "Projet basé sur un site de recettes de cuisine à l’instar de Marmiton ou 750g. L’objectif est de développer une fonctionnalité de recherche et de filtre, tout en respectant le design défini à la lettre.Pour cela, le site doit être fait en se basant sur des use cases, en planifiant 2 versions de l’algorithme de la fonctionnalité de recherche, et en renseignant le document d’investigation de fonctionnalité.Des tests JSBen.ch pour le comparatif de performance ont bien évidemment dû être effectués.",
+                    text: "Projet basé sur un site de recettes de cuisine à l’instar de Marmiton ou 750g. L’objectif est de développer une fonctionnalité de recherche et de filtre, tout en respectant le design défini à la lettre. Pour cela, le site doit être fait en se basant sur des use cases, en planifiant 2 versions de l’algorithme de la fonctionnalité de recherche, et en renseignant le document d’investigation de fonctionnalité. Des tests JSBen.ch pour le comparatif de performance ont bien évidemment dû être effectués.",
                     li: [
                         {
                             content: "",
@@ -666,7 +666,7 @@ export const dataProjects = [
             {
                 name: "FishEye",
                 description: {
-                    text: "Projet basé sur un site web qui permet aux photographes indépendants de présenter leurs meilleurs travaux. Le but est de construire un prototype fonctionnel en HTML, CSS et JavaScript, avec pour priorité absolue l’accessibilité; il doit donc être utilisable par les lecteurs d’écran.Le site utilise également le pattern Factory Method.",
+                    text: "Projet basé sur un site web qui permet aux photographes indépendants de présenter leurs meilleurs travaux. Le but est de construire un prototype fonctionnel en HTML, CSS et JavaScript, avec pour priorité absolue l’accessibilité; il doit donc être utilisable par les lecteurs d’écran. Le site utilise également le pattern Factory Method.",
                     li: [
                         {
                             content: "",
@@ -715,7 +715,7 @@ export const dataProjects = [
             {
                 name: "GameOn",
                 description: {
-                    text: "Projet basé sur un site de jeux vidéos. L’objectif est de terminer la partie front- end responsive du site en JavaScript(à savoir la landing page), de bien documenter son code, et de tester manuellement ce dernier.",
+                    text: "Projet basé sur un site de jeux vidéos. L’objectif est de terminer la partie front- end responsive du site en JavaScript (à savoir la landing page), de bien documenter son code, et de tester manuellement ce dernier.",
                     li: [
                         {
                             content: "",
@@ -760,7 +760,7 @@ export const dataProjects = [
             {
                 name: "Ohmyfood",
                 description: {
-                    text: "Projet basé sur un site répertoriant les menus de restaurants gastronomiques. L’objectif est de développer ce site 100% mobile et d’y intégrer 4 menus à partir d’un brief.On doit également y trouver des animations CSS comme un loader au chargement de la page.",
+                    text: "Projet basé sur un site répertoriant les menus de restaurants gastronomiques. L’objectif est de développer ce site 100% mobile et d’y intégrer 4 menus à partir d’un brief. On doit également y trouver des animations CSS comme un loader au chargement de la page.",
                     li: [
                         {
                             content: "",
