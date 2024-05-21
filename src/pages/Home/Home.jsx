@@ -1,14 +1,11 @@
 import { Link } from 'react-router-dom';
 import './Home.scss';
 import { useEffect, useState } from 'react';
-// import Loader from 'react-loaders';
 import AnimatedLetters from '../../components/AnimatedLetters/AnimatedLetters';
 import Logo from '../../components/Logo/Logo';
-import Loader from '../../components/Loader/Loader';
 
 const Home = () => {
-    const [loading, setLoading] = useState(true);
-
+    const [showContent, setShowContent] = useState(false);
     const [letterClass, setLetterClass] = useState('text-animate');
     const hiArray = ['B', 'o', 'n', 'j', 'o', 'u', 'r', ','];
     const iAmArray = ['J', 'e', ' ', 's', 'u', 'i', 's'];
@@ -16,22 +13,22 @@ const Home = () => {
     const jobArray = ['d', 'é', 'v', 'e', 'l', 'o', 'p', 'p', 'e', 'u', 's', 'e', ' ', 'w', 'e', 'b', ' ', 'a', 'l', 't', 'e', 'r', 'n', 'a', 'n', 't', 'e', '.'];
 
     useEffect(() => {
-        setTimeout(() => {
-            setLoading(false);
-        }, 1000);
+        const timer = setTimeout(() => {
+            setShowContent(true);
+        }, 2500);
+
+        return () => clearTimeout(timer);
     }, []);
 
     useEffect(() => {
         setTimeout(() => {
-            return setLetterClass('text-animate-hover')
-        }, 7500)
-    }, [])
+            setLetterClass('text-animate-hover');
+        }, 9500);
+    }, []);
 
     return (
         <>
-            {loading ?
-                <Loader />
-                :
+            {showContent && (
                 <div className="container home-page">
                     <div className="text-zone">
                         <h1>
@@ -51,10 +48,7 @@ const Home = () => {
                     </div>
                     <Logo />
                 </div>
-            }
-
-            {/* <Loader type='pacman' /> */}
-            {/* <Loader /> */}
+            )}
         </>
     )
 };

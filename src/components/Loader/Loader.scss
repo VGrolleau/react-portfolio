@@ -7,10 +7,10 @@
     right: 0;
     background: #022c43;
     z-index: 2;
-    // display: none;
     overflow: hidden;
     height: 100%;
     width: 100%;
+    animation: appearLeft 1s linear, leaveRight 1s linear 3s forwards;
 
     .inner {
         position: absolute;
@@ -50,7 +50,35 @@
                 height: 1px;
                 background: #ffd700;
                 width: 0;
+                animation: widthFull 2s linear 1s forwards;
             }
         }
+    }
+}
+
+@keyframes widthFull {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes appearLeft {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes leaveRight {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(100%);
     }
 }

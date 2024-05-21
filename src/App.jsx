@@ -6,10 +6,11 @@ import About from './pages/About/About';
 import Skills from './pages/Skills/Skills';
 import Portfolio from './pages/Portfolio/Portfolio';
 import Contact from './pages/Contact/Contact';
+import PageLoader from './routing/PageLoader';
 
 function App() {
   return (
-    <>
+    <PageLoader>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
@@ -19,7 +20,7 @@ function App() {
           <Route path='contact' element={<Contact />} />
         </Route>
       </Routes>
-    </>
+    </PageLoader>
   );
 }
 
