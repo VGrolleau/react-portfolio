@@ -31,8 +31,7 @@
     will-change: contents;
     opacity: 0;
     transform-style: preserve-3d;
-    animation: fadeIn 1s forwards;
-    animation-delay: 1s;
+    animation: zoomIn 1s ease-in-out 1s forwards, fadeIn 1s 1s forwards;
 }
 
 .about-page,
@@ -88,7 +87,7 @@
             font-family: sans-serif;
             font-weight: 300;
             min-width: fit-content;
-            animation: pulse 1s;
+            animation: pulse 1s 1s;
             padding-left: 40px;
             text-align: justify;
 
@@ -110,5 +109,16 @@
         &:hover {
             color: #fff;
         }
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
     }
 }
