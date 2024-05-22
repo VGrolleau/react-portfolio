@@ -163,13 +163,13 @@
         min-height: 0;
         display: flex;
         justify-content: space-between;
+        align-items: center;
 
         .logo {
             padding: 0;
 
             .img {
                 width: 40px;
-                height: auto;
                 margin: auto;
                 margin-left: 10px;
 
@@ -208,5 +208,20 @@
 @media only screen and (max-width: 530px) {
     .nav-bar {
         position: fixed;
+
+        nav,
+        ul {
+            pointer-events: none;
+            opacity: 0;
+            transform: translateX(100%);
+            transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+        }
+
+        .hamburger-open {
+            pointer-events: initial;
+            opacity: 1;
+            transform: translateX(0);
+            transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+        }
     }
 }

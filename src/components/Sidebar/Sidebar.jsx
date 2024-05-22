@@ -3,8 +3,16 @@ import './Sidebar.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faGear, faHome, faSuitcase, faUser } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import Hamburger from '../Hamburger/Hamburger';
+import { useState } from 'react';
 
 const Sidebar = () => {
+    const [hamburgerOpen, setHamburgerOpen] = useState(false);
+
+    const toggleHamburger = () => {
+        setHamburgerOpen(!hamburgerOpen);
+    };
+
     return (
         <div className="nav-bar">
             <Link className="logo" to="/">
@@ -14,7 +22,7 @@ const Sidebar = () => {
                     <text className='text-virginie'>Virginie</text>
                 </svg>
             </Link>
-            <nav>
+            <nav className={hamburgerOpen ? 'hamburger-open' : ''}>
                 <NavLink exact="true" activeclassname="active" to="/">
                     <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
                 </NavLink>
@@ -31,7 +39,7 @@ const Sidebar = () => {
                     <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
                 </NavLink>
             </nav>
-            <ul>
+            <ul className={hamburgerOpen ? 'hamburger-open' : ''}>
                 <li>
                     <a target="_blank" rel='noreferrer' href='https://www.linkedin.com/in/virginie-grolleau-/'>
                         <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" />
@@ -43,6 +51,9 @@ const Sidebar = () => {
                     </a>
                 </li>
             </ul>
+            <div className='hamburger' onClick={toggleHamburger}>
+                <Hamburger isOpen={hamburgerOpen} />
+            </div>
         </div>
     )
 };

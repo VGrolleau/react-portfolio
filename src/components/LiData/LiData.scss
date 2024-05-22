@@ -35,3 +35,10 @@ li {
         }
     }
 }
+
+@media only screen and (max-width: 960px) {
+    li {
+        opacity: 1;
+        animation: none;
+    }
+}

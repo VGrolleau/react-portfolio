@@ -1,0 +1,48 @@
+.hamburger {
+    width: 2rem;
+    height: 2rem;
+    display: none;
+    margin-right: 10px;
+
+    .burger {
+        width: 2rem;
+        height: 0.25rem;
+        border-radius: 10px;
+        background-color: #fff;
+        transform-origin: 1px;
+        transition: all 0.3s linear;
+    }
+
+    .burger1-close,
+    .burger3-close {
+        transform: rotate(0);
+    }
+
+    .burger2-close {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    .burger1-open {
+        transform: rotate(45deg);
+    }
+
+    .burger2-open {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    .burger3-open {
+        transform: rotate(-45deg);
+    }
+}
+
+@media only screen and (max-width: 530px) {
+    .hamburger {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-around;
+        z-index: 10;
+        cursor: pointer;
+    }
+}
