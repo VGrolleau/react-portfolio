@@ -8,11 +8,10 @@ const Sidebar = () => {
     return (
         <div className="nav-bar">
             <Link className="logo" to="/">
-                <svg width="250" height="290" xmlns="http://www.w3.org/2000/svg" className='img'>
-                    <text x="8" y="38" fontFamily="Coolvetica" fontSize="50" fill="#ffd700" className='text-v'>V</text>
-                    <text x="10" y="35" fontFamily="Coolvetica" fontSize="50" fill="#115173" className='text-v'>V</text>
-
-                    <text x="3" y="55" fontFamily="Coolvetica" fontSize="14" fill="white" stroke="none" className='text-virginie'>Virginie</text>
+                <svg xmlns="http://www.w3.org/2000/svg" className='img'>
+                    <text className='text-v'>V</text>
+                    <text className='text-v'>V</text>
+                    <text className='text-virginie'>Virginie</text>
                 </svg>
             </Link>
             <nav>
