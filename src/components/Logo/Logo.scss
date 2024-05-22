@@ -15,7 +15,13 @@
         transform: rotateZ(10deg);
 
         text {
+            font-family: "Coolvetica";
+            transform: translate(15px, 495px);
             font-size: 700px;
+
+            &:first-of-type {
+                transform: translate(0, 505px);
+            }
         }
     }
 }
@@ -29,22 +35,34 @@
     margin: auto;
     z-index: 1;
     animation: graduateOpacity 8s;
+
+    text {
+        fill: #115173;
+
+        &:first-of-type {
+            transform: translate(0, 505px);
+            fill: #ffd700;
+        }
+    }
 }
 
-.svg-container text {
-    stroke: #ffd700;
-    stroke-width: 0.5;
-    stroke-dasharray: 2060;
-    stroke-dashoffset: 100;
-    animation: dash 7s linear normal;
+.svg-container {
+    text {
+        fill: none;
+        stroke: #ffd700;
+        stroke-width: 0.5;
+        stroke-dasharray: 2060;
+        stroke-dashoffset: 100;
+        animation: dash 7s linear normal;
+    }
+}
 
-    @keyframes dash {
-        from {
-            stroke-dashoffset: 2060;
-        }
-        to {
-            stroke-dashoffset: 0;
-        }
+@keyframes dash {
+    from {
+        stroke-dashoffset: 2060;
+    }
+    to {
+        stroke-dashoffset: 0;
     }
 }
 
@@ -57,5 +75,11 @@
     }
     100% {
         opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    .logo-container {
+        opacity: 0.5;
     }
 }

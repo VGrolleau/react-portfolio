@@ -36,8 +36,8 @@ const Home = () => {
                             <br />
                             <AnimatedLetters letterClass={letterClass} charactersArray={iAmArray} index={18} />
                             <svg xmlns="http://www.w3.org/2000/svg" className="img-home">
-                                <text x="0" y="50" fontFamily="Coolvetica" fill="#ffd700" className='text-v-home'>V</text>
-                                <text x="3" y="48" fontFamily="Coolvetica" fill="#115173" className='text-v-home'>V</text>
+                                <text className='text-v-home'>V</text>
+                                <text className='text-v-home'>V</text>
                             </svg>
                             <AnimatedLetters letterClass={letterClass} charactersArray={nameArray} index={25} />
                             <br />
