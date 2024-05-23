@@ -39,3 +39,28 @@
         opacity: 1;
     }
 }
+
+@media only screen and (max-width: 960px) {
+    .portfolio-page {
+        .text-zone {
+            ul {
+                padding: 0;
+            }
+        }
+
+        .project-overview {
+            display: none;
+        }
+    }
+}
+
+@media only screen and (max-width: 1100px) and (max-height: 900px) {
+    .portfolio-page {
+        .text-zone {
+            width: 90%;
+        }
+        .project-overview {
+            display: none;
+        }
+    }
+}
