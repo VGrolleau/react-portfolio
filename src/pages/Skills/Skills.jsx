@@ -8,7 +8,7 @@ import WordCloud from '../../components/WordCloud/WordCloud';
 const Skills = () => {
     const [showContent, setShowContent] = useState(false);
     const [letterClass, setLetterClass] = useState('text-animate');
-    const titleArray = ['C', 'o', 'm', 'p', 'é', 't', 'e', 'n', 'c', 'e', 's', ' ', '&', ' ', 'E', 'x', 'p', 'é', 'r', 'i', 'e', 'n', 'c', 'e', 's'];
+    const titleArray = ['S', 'a', 'v', 'o', 'i', 'r', 's', ' ', 'f', 'a', 'i', 'r', 'e'];
 
     useEffect(() => {
         const timer = setTimeout(() => {
@@ -21,7 +21,7 @@ const Skills = () => {
     useEffect(() => {
         setTimeout(() => {
             return setLetterClass('text-animate-hover')
-        }, 6100)
+        }, 5500);
     }, []);
 
     return (
