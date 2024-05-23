@@ -42,3 +42,19 @@ li {
         animation: none;
     }
 }
+
+@media only screen and (max-width: 530px) {
+    li {
+        a {
+            .project-row {
+                .project-row-right {
+                    max-width: 50%;
+
+                    p {
+                        text-align: right;
+                    }
+                }
+            }
+        }
+    }
+}

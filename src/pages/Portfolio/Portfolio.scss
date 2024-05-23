@@ -64,3 +64,13 @@
         }
     }
 }
+
+@media only screen and (max-width: 530px) {
+    .portfolio-page {
+        .text-zone {
+            ul {
+                height: 60vh;
+            }
+        }
+    }
+}

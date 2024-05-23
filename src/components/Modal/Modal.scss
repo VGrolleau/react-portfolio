@@ -181,13 +181,42 @@
 @media only screen and (max-width: 530px) {
     .modal-wrapper {
         .modal {
+            max-height: 60vh;
+
             .modal-top {
+                flex-direction: column;
                 margin-top: 40px;
+
+                img {
+                    width: 100%;
+                }
+
+                .modal-top-left {
+                    width: 100%;
+                    text-align: start;
+                    padding: 10px;
+
+                    .modal-category {
+                        p {
+                            text-align: start;
+                        }
+                    }
+
+                    ul {
+                        height: auto;
+                        padding-left: 0;
+                    }
+                }
+            }
+
+            ul {
+                height: auto;
+                padding-left: 0;
             }
 
             .modal-description,
             .modal-links {
-                margin: 10px;
+                margin: 20px 0;
             }
         }
     }
