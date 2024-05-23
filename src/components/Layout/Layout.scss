@@ -143,4 +143,25 @@
         height: 100vh;
         overflow: hidden;
     }
+
+    .about-page,
+    .contact-page,
+    .skills-page,
+    .portfolio-page {
+        width: 100%;
+        margin-left: 0;
+
+        .text-zone {
+            position: relative;
+            top: 150px;
+            width: 80%;
+            min-height: 0;
+            margin: 0 auto;
+
+            h1 {
+                font-size: 36px;
+                line-height: 40px;
+            }
+        }
+    }
 }
