@@ -95,3 +95,17 @@
         right: 2%;
     }
 }
+
+@media only screen and (max-width: 530px) {
+    .logo-container {
+        right: 0;
+
+        .svg-container {
+            position: absolute;
+            top: auto;
+            right: auto;
+            bottom: auto;
+            left: auto;
+        }
+    }
+}

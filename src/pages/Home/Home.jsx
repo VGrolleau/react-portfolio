@@ -10,7 +10,7 @@ const Home = () => {
     const hiArray = ['B', 'o', 'n', 'j', 'o', 'u', 'r', ','];
     const iAmArray = ['J', 'e', ' ', 's', 'u', 'i', 's'];
     const nameArray = ['i', 'r', 'g', 'i', 'n', 'i', 'e', ','];
-    const jobArray = ['d', 'é', 'v', 'e', 'l', 'o', 'p', 'p', 'e', 'u', 's', 'e', ' ', 'w', 'e', 'b', ' ', 'a', 'l', 't', 'e', 'r', 'n', 'a', 'n', 't', 'e', '.'];
+    const jobArray = ['d', 'é', 'v', 'e', 'l', 'o', 'p', 'p', 'e', 'u', 's', 'e', ' ', 'w', 'e', 'b', '.'];
 
     useEffect(() => {
         const timer = setTimeout(() => {
@@ -23,7 +23,7 @@ const Home = () => {
     useEffect(() => {
         setTimeout(() => {
             setLetterClass('text-animate-hover');
-        }, 9500);
+        }, 8500);
     }, []);
 
     return (

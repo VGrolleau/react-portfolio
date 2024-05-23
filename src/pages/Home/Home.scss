@@ -108,5 +108,19 @@
             z-index: 2;
             margin: auto;
         }
+
+        h2 {
+            color: #fff;
+            font-weight: 600;
+        }
+    }
+}
+
+@media only screen and (max-width: 530px) {
+    .home-page {
+        h1 {
+            font-size: 36px;
+            line-height: 40px;
+        }
     }
 }
