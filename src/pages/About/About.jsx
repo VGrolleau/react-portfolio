@@ -33,13 +33,13 @@ const About = () => {
                             <AnimatedLetters letterClass={letterClass} charactersArray={titleArray} index={10} />
                         </h1>
                         <p>
-                            Diplômée Développeuse d’Application JavaScript React via la plateforme OpenClassrooms, je cherche une entreprise qui pourra m’accueillir en alternance soit pour la formation Développeuse Full-Stack Java Angular toujours avec OpenClassrooms, soit pour la formation Conceptrice Développeuse d’Application avec ARINFO Niort.
+                            Diplômée Développeuse d’Application JavaScript React via OpenClassrooms, je suis actuellement développeuse web freelance spécialisée en développement Front-End. Mon parcours atypique, allant du secteur sanitaire et social à des métiers manuels comme la menuiserie et la cuisine, m’a finalement conduit à ma véritable vocation : le développement web. Grâce à des formations solides, notamment auprès de l’ENI École Informatique et OpenClassrooms, j’ai acquis les compétences nécessaires pour créer des sites web et des applications performants et esthétiquement plaisants.
                         </p>
                         <p>
-                            Après des études dans le sanitaire et social, puis une réorientation vers des métiers manuels (tels que la menuiserie et la cuisine en restauration), je peux aujourd’hui affirmer que je suis une développeuse web (diplômée auprès de l’ENI École Informatique) qui s’est spécialisée en React (auprès d’OpenClassrooms). Cela a été possible grâce à la validation des certificats et diplômes qui m’ont donné les clés pour le développement de sites, d’applications ou encore de jeux vidéos.
+                            Ce qui me passionne le plus dans ce domaine, c’est de parvenir à un résultat à la fois fonctionnel et visuellement attrayant. Mon sens artistique, renforcé par mes compétences en dessin, me permet de concevoir des projets qui allient performance technique et design soigné. En tant que développeuse Front-End, je m’efforce de constamment me perfectionner pour offrir des solutions innovantes et efficaces à mes clients.
                         </p>
                         <p>
-                            Ce qui me passionne le plus dans le développement web et applicatif, c’est de parvenir à un résultat autant satisfaisant dans la fonctionnalité que dans l’esthétique (attrait dérivé de mon appétence et mes compétences en dessin). Mon objectif est de continuer à me perfectionner et être le plus efficiente possible via la formation sur laquelle je souhaite poursuivre en alternance.
+                            En tant que freelance, je suis disponible pour collaborer sur des projets variés, qu'il s'agisse de développement front-end, de conception d’applications web ou de création de contenus interactifs. Mon approche est centrée sur la satisfaction du client et l'atteinte d'un haut niveau d'excellence dans chaque projet.
                         </p>
                     </div>
 

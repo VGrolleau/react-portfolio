@@ -88,7 +88,10 @@ const Contact = () => {
                         </h1>
 
                         <p>
-                            N’hésitez pas à me contacter, je vous répondrai dans les plus brefs délais.
+                            Je suis toujours à la recherche de nouveaux défis et de projets passionnants à réaliser. En tant que développeuse web freelance spécialisée en développement Front-End, je suis disponible pour discuter de vos besoins et vous apporter des solutions personnalisées.
+                        </p>
+                        <p>
+                            N'hésitez pas à me contacter pour échanger sur votre projet ou toute autre demande ; je me ferai un plaisir de vous répondre rapidement et de collaborer avec vous pour concrétiser vos idées.
                         </p>
 
                         <div className='contact-form'>

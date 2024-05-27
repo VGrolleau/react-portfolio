@@ -33,7 +33,7 @@ const Skills = () => {
                             <AnimatedLetters letterClass={letterClass} charactersArray={titleArray} index={10} />
                         </h1>
                         <p>
-                            Experte en développement Front-End, y compris des technologies telles que
+                            Spécialisée en développement Front-End, y compris des technologies telles que
                             {
                                 dataTechTags.map((data, index) => {
                                     return (<span className="tech-tag" key={index}>{data.name},</span>)
@@ -41,10 +41,10 @@ const Skills = () => {
                             } etc.
                         </p>
                         <p>
-                            Je ne suis pas designer, mais j'ai un bon sens de l'esthétique et de l'expérience dans la conception de sites web responsive et mobile first. Je m'efforce d'optimiser mon code et de fournir la meilleure expérience utilisateur possible, grâce notamment à l'accessibilité. Je serais ravie de vous apporter tout type de soutien, même après l'achèvement du projet. Je vous garantis un engagement pendant le travail sur votre projet.
+                            Avec un œil aiguisé pour l'esthétique et une solide expérience dans la conception de sites web responsive et mobile first, je crée des solutions qui allient beauté et fonctionnalité. Je mets un point d'honneur à optimiser mon code pour offrir la meilleure expérience utilisateur possible, en accordant une attention particulière à l'accessibilité. Je suis également disponible pour vous apporter un soutien continu même après l'achèvement du projet, assurant ainsi une collaboration réussie et durable. Mon engagement et ma passion pour le développement garantissent des résultats de qualité pour votre projet.
                         </p>
                         <p>
-                            Visitez mon profil <a rel='noreferrer' target="_blank" href="https://www.linkedin.com/in/virginie-grolleau-/">LinkedIn</a> pour plus de détails. Vous pouvez également consulter mon CV en suivant ce <a rel='noreferrer' target="_blank" href={cv}>lien</a>.
+                            Pour plus de détails sur mon parcours et mes compétences, n'hésitez pas à visiter <a rel='noreferrer' target="_blank" href="https://www.linkedin.com/in/virginie-grolleau-/">mon profil LinkedIn</a> ou à consulter <a rel='noreferrer' target="_blank" href={cv}>mon CV</a>.
                         </p>
                     </div>
                     <WordCloud />
