@@ -1,5 +1,10 @@
 import './Logo.scss';
 
+/**
+ * The `Logo` function returns a JSX element containing two SVG elements with the letter "V" inside.
+ * @returns The `Logo` component is being returned, which contains two SVG elements with the letter "V"
+ * inside them.
+ */
 const Logo = () => {
     return (
         <div className='logo-container'>

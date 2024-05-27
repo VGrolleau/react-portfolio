@@ -6,9 +6,15 @@ import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import Hamburger from '../Hamburger/Hamburger';
 import { useState } from 'react';
 
+/**
+ * Sidebar component displays navigation links and social media icons.
+ */
 const Sidebar = () => {
     const [hamburgerOpen, setHamburgerOpen] = useState(false);
 
+    /**
+     * Toggles the state of the hamburger menu.
+     */
     const toggleHamburger = () => {
         setHamburgerOpen(!hamburgerOpen);
     };
@@ -23,19 +29,19 @@ const Sidebar = () => {
                 </svg>
             </Link>
             <nav className={hamburgerOpen ? 'hamburger-open' : ''}>
-                <NavLink exact="true" activeclassname="active" to="/">
+                <NavLink exact activeClassName="active" to="/">
                     <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
                 </NavLink>
-                <NavLink exact="true" activeclassname="active" className="about-link" to="/about">
+                <NavLink exact activeClassName="active" className="about-link" to="/about">
                     <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
                 </NavLink>
-                <NavLink exact="true" activeclassname="active" className="skills-link" to="/skills">
+                <NavLink exact activeClassName="active" className="skills-link" to="/skills">
                     <FontAwesomeIcon icon={faGear} color="#4d4d4e" />
                 </NavLink>
-                <NavLink exact="true" activeclassname="active" className="portfolio-link" to="/portfolio">
+                <NavLink exact activeClassName="active" className="portfolio-link" to="/portfolio">
                     <FontAwesomeIcon icon={faSuitcase} color="#4d4d4e" />
                 </NavLink>
-                <NavLink exact="true" activeclassname="active" className="contact-link" to="/contact">
+                <NavLink exact activeClassName="active" className="contact-link" to="/contact">
                     <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
                 </NavLink>
             </nav>
@@ -55,7 +61,7 @@ const Sidebar = () => {
                 <Hamburger isOpen={hamburgerOpen} />
             </div>
         </div>
-    )
+    );
 };
 
 export default Sidebar;
