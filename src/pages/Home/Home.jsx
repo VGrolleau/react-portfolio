@@ -4,6 +4,9 @@ import { useEffect, useState } from 'react';
 import AnimatedLetters from '../../components/AnimatedLetters/AnimatedLetters';
 import Logo from '../../components/Logo/Logo';
 
+/**
+ * Component for rendering the Home page.
+ */
 const Home = () => {
     const [showContent, setShowContent] = useState(false);
     const [letterClass, setLetterClass] = useState('text-animate');
@@ -12,6 +15,7 @@ const Home = () => {
     const nameArray = ['i', 'r', 'g', 'i', 'n', 'i', 'e', ','];
     const jobArray = ['d', 'é', 'v', 'e', 'l', 'o', 'p', 'p', 'e', 'u', 's', 'e', ' ', 'w', 'e', 'b', '.'];
 
+    // Show content after a delay
     useEffect(() => {
         const timer = setTimeout(() => {
             setShowContent(true);
@@ -20,6 +24,7 @@ const Home = () => {
         return () => clearTimeout(timer);
     }, []);
 
+    // Add animation class after a delay
     useEffect(() => {
         setTimeout(() => {
             setLetterClass('text-animate-hover');

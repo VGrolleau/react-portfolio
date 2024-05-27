@@ -4,12 +4,16 @@ import emailjs from '@emailjs/browser';
 import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet';
 import AnimatedLetters from '../../components/AnimatedLetters/AnimatedLetters';
 
+/**
+ * Component for rendering the Contact page.
+ */
 const Contact = () => {
     const [showContent, setShowContent] = useState(false);
     const [letterClass, setLetterClass] = useState('text-animate');
     const [errors, setErrors] = useState({});
     const titleArray = ['M', 'e', ' ', 'c', 'o', 'n', 't', 'a', 'c', 't', 'e', 'r'];
 
+    // Show content after a delay
     useEffect(() => {
         const timer = setTimeout(() => {
             setShowContent(true);
@@ -18,14 +22,16 @@ const Contact = () => {
         return () => clearTimeout(timer);
     }, []);
 
-    const refForm = useRef();
-
+    // Add animation class after a delay
     useEffect(() => {
         setTimeout(() => {
             return setLetterClass('text-animate-hover')
         }, 5000);
     }, []);
 
+    const refForm = useRef();
+
+    // Validate form input fields
     const validate = (name, value) => {
         switch (name) {
             case 'user_name':
@@ -41,12 +47,14 @@ const Contact = () => {
         }
     };
 
+    // Handle form input change
     const handleChange = (e) => {
         const { name, value } = e.target;
         const error = validate(name, value);
         setErrors((prevErrors) => ({ ...prevErrors, [name]: error }));
     };
 
+    // Send email using EmailJS
     const sendEmail = (e) => {
         e.preventDefault();
 

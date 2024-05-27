@@ -5,11 +5,15 @@ import { dataTechTags } from '../../data';
 import AnimatedLetters from '../../components/AnimatedLetters/AnimatedLetters';
 import WordCloud from '../../components/WordCloud/WordCloud';
 
+/**
+ * Component for rendering the Skills page.
+ */
 const Skills = () => {
     const [showContent, setShowContent] = useState(false);
     const [letterClass, setLetterClass] = useState('text-animate');
     const titleArray = ['S', 'a', 'v', 'o', 'i', 'r', 's', ' ', 'f', 'a', 'i', 'r', 'e'];
 
+    // Show content after a delay
     useEffect(() => {
         const timer = setTimeout(() => {
             setShowContent(true);
@@ -18,6 +22,7 @@ const Skills = () => {
         return () => clearTimeout(timer);
     }, []);
 
+    // Add animation class after a delay
     useEffect(() => {
         setTimeout(() => {
             return setLetterClass('text-animate-hover')
@@ -29,9 +34,11 @@ const Skills = () => {
             {showContent && (
                 <div className='container skills-page'>
                     <div className='text-zone'>
+                        {/* Title */}
                         <h1>
                             <AnimatedLetters letterClass={letterClass} charactersArray={titleArray} index={10} />
                         </h1>
+                        {/* Description */}
                         <p>
                             Spécialisée en développement Front-End, y compris des technologies telles que
                             {
@@ -47,11 +54,12 @@ const Skills = () => {
                             Pour plus de détails sur mon parcours et mes compétences, n'hésitez pas à visiter <a rel='noreferrer' target="_blank" href="https://www.linkedin.com/in/virginie-grolleau-/">mon profil LinkedIn</a> ou à consulter <a rel='noreferrer' target="_blank" href={cv}>mon CV</a>.
                         </p>
                     </div>
+                    {/* Render WordCloud component */}
                     <WordCloud />
                 </div>
             )}
         </>
-    )
+    );
 }
 
 export default Skills;

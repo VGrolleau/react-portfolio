@@ -5,11 +5,15 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCss3Alt, faGitAlt, faHtml5, faJsSquare, faReact, faSass } from '@fortawesome/free-brands-svg-icons';
 import AnimatedLetters from '../../components/AnimatedLetters/AnimatedLetters';
 
+/**
+ * Component for rendering the About page.
+ */
 const About = () => {
     const [showContent, setShowContent] = useState(false);
     const [letterClass, setLetterClass] = useState('text-animate');
     const titleArray = ['À', ' ', 'p', 'r', 'o', 'p', 'o', 's', ' ', 'd', 'e', ' ', 'm', 'o', 'i'];
 
+    // Show content after a delay
     useEffect(() => {
         const timer = setTimeout(() => {
             setShowContent(true);
@@ -18,6 +22,7 @@ const About = () => {
         return () => clearTimeout(timer);
     }, []);
 
+    // Add animation class after a delay
     useEffect(() => {
         setTimeout(() => {
             return setLetterClass('text-animate-hover')
