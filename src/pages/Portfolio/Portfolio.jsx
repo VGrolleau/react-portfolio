@@ -10,7 +10,7 @@ import LiData from '../../components/LiData/LiData';
 const Portfolio = () => {
     const [showContent, setShowContent] = useState(false);
     const [letterClass, setLetterClass] = useState('text-animate');
-    const titleArray = ['M', 'y', ' ', 'P', 'r', 'o', 'j', 'e', 'c', 't', 's'];
+    const titleArray = ['M', 'e', 's', ' ', 'p', 'r', 'o', 'j', 'e', 't', 's'];
     const [activeLiIndex, setActiveLiIndex] = useState(null);
     const [animationKey, setAnimationKey] = useState(0);
 
