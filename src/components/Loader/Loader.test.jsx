@@ -3,10 +3,6 @@ import { render, screen } from '@testing-library/react';
 import Loader from './Loader';
 
 describe('Loader component', () => {
-    it('renders without errors', () => {
-        render(<Loader />);
-    });
-
     it('renders inner elements correctly', () => {
         render(<Loader />);
 
