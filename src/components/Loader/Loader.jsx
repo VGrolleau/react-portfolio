@@ -16,7 +16,7 @@ const Loader = () => {
                     <text x="3" y="60" fontFamily="Coolvetica" fontSize="18" fill="white" stroke="none" className='text-virginie'>Virginie</text>
                 </svg>
                 <span>Travail en cours</span>
-                <div className='progress-bar'>
+                <div className='progress-bar' data-testid='progress-bar'>
                     <div className='progress-bar_bg'>
                         <div></div>
                     </div>
