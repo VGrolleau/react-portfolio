@@ -44,6 +44,7 @@ const LiData = ({ category, dataObject, activeLiIndex, setActiveLiIndex, setAnim
                     isOpen={isModalOpen}
                     selectedData={selectedData}
                     onClose={() => setIsModalOpen(false)}
+                    data-testid='modal'
                 />
             )}
             {dataObject.map((data, index) => (
