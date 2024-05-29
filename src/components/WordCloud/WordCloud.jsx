@@ -43,7 +43,7 @@ const WordCloud = () => {
     // Determine the current options based on device type
     const currentOptions = isMobile ? optionsMobile : isTablet ? optionsTablet : options;
 
-    /* To render WordCloud each time the page is reloaded */
+    // To render WordCloud each time the page is reloaded
     const hasLoadedBefore = useRef(true);
     useEffect(() => {
         if (hasLoadedBefore.current) {
