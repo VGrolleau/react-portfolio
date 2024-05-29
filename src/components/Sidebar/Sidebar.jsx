@@ -29,35 +29,35 @@ const Sidebar = () => {
                 </svg>
             </Link>
             <nav className={hamburgerOpen ? 'hamburger-open' : ''}>
-                <NavLink exact activeClassName="active" to="/">
+                <NavLink exact activeClassName="active" to="/" aria-label="Accueil">
                     <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
                 </NavLink>
-                <NavLink exact activeClassName="active" className="about-link" to="/about">
+                <NavLink exact activeClassName="active" className="about-link" to="/about" aria-label="À propos">
                     <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
                 </NavLink>
-                <NavLink exact activeClassName="active" className="skills-link" to="/skills">
+                <NavLink exact activeClassName="active" className="skills-link" to="/skills" aria-label="Compétences">
                     <FontAwesomeIcon icon={faGear} color="#4d4d4e" />
                 </NavLink>
-                <NavLink exact activeClassName="active" className="portfolio-link" to="/portfolio">
+                <NavLink exact activeClassName="active" className="portfolio-link" to="/portfolio" aria-label="Projets">
                     <FontAwesomeIcon icon={faSuitcase} color="#4d4d4e" />
                 </NavLink>
-                <NavLink exact activeClassName="active" className="contact-link" to="/contact">
+                <NavLink exact activeClassName="active" className="contact-link" to="/contact" aria-label="Contact">
                     <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
                 </NavLink>
             </nav>
             <ul className={hamburgerOpen ? 'hamburger-open' : ''}>
                 <li>
-                    <a target="_blank" rel='noreferrer' href='https://www.linkedin.com/in/virginie-grolleau-/'>
+                    <a target="_blank" rel='noreferrer' href='https://www.linkedin.com/in/virginie-grolleau-/' aria-label="LinkedIn">
                         <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" />
                     </a>
                 </li>
                 <li>
-                    <a target="_blank" rel='noreferrer' href='https://github.com/VGrolleau'>
+                    <a target="_blank" rel='noreferrer' href='https://github.com/VGrolleau' aria-label="GitHub">
                         <FontAwesomeIcon icon={faGithub} color="#4d4d4e" />
                     </a>
                 </li>
             </ul>
-            <div className='hamburger' onClick={toggleHamburger}>
+            <div className='hamburger' onClick={toggleHamburger} data-testid="hamburger-button">
                 <Hamburger isOpen={hamburgerOpen} />
             </div>
         </div>
