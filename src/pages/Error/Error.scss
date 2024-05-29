@@ -1,0 +1,124 @@
+.error-page {
+    .text-zone {
+        position: absolute;
+        left: 10%;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 40%;
+        max-height: 90%;
+    }
+
+    h1 {
+        font-size: 53px;
+        font-family: "Coolvetica";
+        color: #ffd700;
+        font-weight: 400;
+        margin-top: 0;
+        position: relative;
+        margin-bottom: 40px;
+        left: 10px;
+
+        &::before {
+            content: "<h1>";
+            font-family: "La Belle Aurore";
+            font-size: 18px;
+            position: absolute;
+            margin-top: -10px;
+            left: -10px;
+            opacity: 0.6;
+            line-height: 18px;
+        }
+
+        &::after {
+            content: "</h1>";
+            font-family: "La Belle Aurore";
+            font-size: 18px;
+            position: absolute;
+            left: -30px;
+            bottom: -20px;
+            margin-left: 20px;
+            opacity: 0.6;
+            line-height: 18px;
+        }
+    }
+
+    .text-animate-hover {
+        &:hover {
+            color: #fff;
+        }
+    }
+
+    h2 {
+        color: #8d8d8d;
+        margin-top: 20px;
+        font-weight: 400;
+        font-size: 11px;
+        font-family: sans-serif;
+        letter-spacing: 3px;
+        animation: fadeIn 1s 1.8s backwards;
+    }
+
+    .flat-button {
+        color: #ffd700;
+        font-size: 13px;
+        font-weight: 400;
+        letter-spacing: 4px;
+        font-family: sans-serif;
+        text-decoration: none;
+        padding: 10px 18px;
+        border: 1px solid #ffd700;
+        margin-top: 25px;
+        float: left;
+        animation: fadeIn 1s 1.8s backwards;
+        white-space: nowrap;
+        text-transform: uppercase;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            background: #ffd700;
+            color: #333;
+            transition: all 0.3s ease-in-out;
+        }
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    .error-page {
+        .text-zone {
+            position: relative;
+            transform: none;
+            top: 0;
+            bottom: 0;
+            left: 50px;
+            right: 50px;
+            width: 100%;
+            min-height: 0;
+            z-index: 2;
+            margin: auto;
+        }
+
+        h2 {
+            color: #fff;
+            text-align: justify;
+        }
+    }
+}
+
+@media only screen and (max-width: 530px) {
+    .error-page {
+        height: calc(100vh - 150px);
+        align-items: center;
+
+        .text-zone {
+            left: auto;
+            right: auto;
+            width: auto;
+            margin: auto 10px;
+        }
+
+        h1 {
+            font-size: 36px;
+            line-height: 40px;
+        }
+    }
+}

@@ -7,6 +7,7 @@ import Skills from './pages/Skills/Skills';
 import Portfolio from './pages/Portfolio/Portfolio';
 import Contact from './pages/Contact/Contact';
 import PageLoader from './routing/PageLoader';
+import Error from './pages/Error/Error';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path='skills' element={<Skills />} />
           <Route path='portfolio' element={<Portfolio />} />
           <Route path='contact' element={<Contact />} />
+          <Route path="*" element={<Error />} />
         </Route>
       </Routes>
     </PageLoader>

@@ -59,11 +59,11 @@ const Modal = ({ isOpen, selectedData, onClose }) => {
                     <div className='modal-top-left'>
                         <h2>{data.name}</h2>
                         <div className='modal-category'>
-                            <h3>Category</h3>
+                            <h3>Catégorie</h3>
                             <p>{categoryName}</p>
                         </div>
                         <div className='modal-skills'>
-                            <h3>Skills</h3>
+                            <h3>Compétences</h3>
                             <ul>
                                 {skills.map((skill, index) => (
                                     <li key={index}>{skill}</li>
@@ -93,7 +93,7 @@ const Modal = ({ isOpen, selectedData, onClose }) => {
                 </div>
                 {!areAllFieldsEmpty(data.links) && (
                     <div className='modal-links'>
-                        <h3>Links</h3>
+                        <h3>Liens</h3>
                         <div className='links'>
                             {Object.values(data.links).map((link, index) => (
                                 Object.values(link).map((linkItem, innerIndex) => (
