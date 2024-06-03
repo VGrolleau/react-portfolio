@@ -48,27 +48,27 @@ const About = () => {
                         </p>
                     </div>
 
-                    <div className='stage-cube-cont'>
+                    <div className='stage-cube-cont' data-testid='stage-cube-cont'>
                         <div id='stars'></div>
                         <div id='stars2'></div>
                         <div id='stars3'></div>
                         <div className='cubespinner'>
-                            <div className='face1'>
+                            <div className='face1' data-testid='face1'>
                                 <FontAwesomeIcon icon={faHtml5} color="#F06529" />
                             </div>
-                            <div className='face2'>
+                            <div className='face2' data-testid='face2'>
                                 <FontAwesomeIcon icon={faReact} color="#5ED4F4" />
                             </div>
-                            <div className='face3'>
+                            <div className='face3' data-testid='face3'>
                                 <FontAwesomeIcon icon={faCss3Alt} color="#28A4D9" />
                             </div>
-                            <div className='face4'>
+                            <div className='face4' data-testid='face4'>
                                 <FontAwesomeIcon icon={faSass} color="#CF649A" />
                             </div>
-                            <div className='face5'>
+                            <div className='face5' data-testid='face5'>
                                 <FontAwesomeIcon icon={faJsSquare} color="#EFD81D" />
                             </div>
-                            <div className='face6'>
+                            <div className='face6' data-testid='face6'>
                                 <FontAwesomeIcon icon={faGitAlt} color="#EC4D28" />
                             </div>
                         </div>
