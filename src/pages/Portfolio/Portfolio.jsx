@@ -77,7 +77,7 @@ const Portfolio = () => {
                     </div>
                     <div className="project-overview">
                         {/* Render project overview image */}
-                        {getImageUrl() && <img key={animationKey} className='overview' src={require(`../../${getImageUrl()}`)} alt='Project Overview' />}
+                        {getImageUrl() && <img key={animationKey} data-testid="project-overview" className='overview' src={require(`../../${getImageUrl()}`)} alt='Project Overview' />}
                     </div>
                 </div>
             )}
