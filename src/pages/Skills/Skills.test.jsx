@@ -44,6 +44,6 @@ describe('Skills page', () => {
 
         // Check that LinkedIn and CV links are present
         expect(screen.getByText(/mon profil LinkedIn/i)).toHaveAttribute('href', 'https://www.linkedin.com/in/virginie-grolleau-/');
-        expect(screen.getByText(/mon CV/i)).toHaveAttribute('href', expect.stringContaining('cv-grolleau-virginie-alternance.pdf'));
+        expect(screen.getByText(/mon CV/i)).toHaveAttribute('href', expect.stringContaining('cv-grolleau-virginie.pdf'));
     });
 });

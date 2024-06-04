@@ -1,6 +1,6 @@
 import './Skills.scss';
 import { useEffect, useState } from 'react';
-import cv from '../../assets/documents/cv-grolleau-virginie-alternance.pdf';
+import cv from '../../assets/documents/cv-grolleau-virginie.pdf';
 import { dataTechTags } from '../../data';
 import AnimatedLetters from '../../components/AnimatedLetters/AnimatedLetters';
 import WordCloud from '../../components/WordCloud/WordCloud';
