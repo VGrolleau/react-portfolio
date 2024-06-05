@@ -5,6 +5,7 @@ import { faEnvelope, faGear, faHome, faSuitcase, faUser } from '@fortawesome/fre
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import Hamburger from '../Hamburger/Hamburger';
 import { useState } from 'react';
+import LanguageSelector from '../LanguageSelector/LanguageSelector';
 
 /**
  * Sidebar component displays navigation links and social media icons.
@@ -55,6 +56,9 @@ const Sidebar = () => {
                     <a target="_blank" rel='noreferrer' href='https://github.com/VGrolleau' aria-label="GitHub">
                         <FontAwesomeIcon icon={faGithub} color="#4d4d4e" />
                     </a>
+                </li>
+                <li>
+                    <LanguageSelector />
                 </li>
             </ul>
             <div className='hamburger' onClick={toggleHamburger} data-testid="hamburger-button">

@@ -8,6 +8,7 @@ import Portfolio from './pages/Portfolio/Portfolio';
 import Contact from './pages/Contact/Contact';
 import PageLoader from './routing/PageLoader';
 import Error from './pages/Error/Error';
+import './i18n';
 
 function App() {
   return (
