@@ -6,11 +6,50 @@ import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import Hamburger from '../Hamburger/Hamburger';
 import { useState } from 'react';
 import LanguageSelector from '../LanguageSelector/LanguageSelector';
+import { useTranslation } from 'react-i18next';
+import styled from 'styled-components';
+
+const StyledHome = styled(NavLink)`
+        &.home-link::after {
+                content: "${props => props.aftertext}";
+        }
+    `;
+
+const StyledAbout = styled(NavLink)`
+        &.about-link::after {
+                content: "${props => props.aftertext}";
+        }
+    `;
+
+const StyledSkills = styled(NavLink)`
+        &.skills-link::after {
+                content: "${props => props.aftertext}";
+        }
+    `;
+
+const StyledProjects = styled(NavLink)`
+        &.portfolio-link::after {
+                content: "${props => props.aftertext}";
+        }
+    `;
+
+const StyledContact = styled(NavLink)`
+        &.contact-link::after {
+                content: "${props => props.aftertext}";
+        }
+    `;
 
 /**
  * Sidebar component displays navigation links and social media icons.
  */
 const Sidebar = () => {
+    const { t } = useTranslation();
+    const afterHome = t('sidebar.home');
+    const afterAbout = t('sidebar.about');
+    const afterSkills = t('sidebar.skills');
+    const afterProjects = t('sidebar.projects');
+    const afterContact = t('sidebar.contact');
+
     const [hamburgerOpen, setHamburgerOpen] = useState(false);
 
     /**
@@ -30,21 +69,21 @@ const Sidebar = () => {
                 </svg>
             </Link>
             <nav className={hamburgerOpen ? 'hamburger-open' : ''}>
-                <NavLink exact="true" activeclassname="active" to="/" aria-label="Accueil">
+                <StyledHome exact="true" activeclassname="active" className="home-link" to="/" aria-label={t('sidebar.home')} aftertext={afterHome}>
                     <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
-                </NavLink>
-                <NavLink exact="true" activeclassname="active" className="about-link" to="/about" aria-label="À propos">
+                </StyledHome>
+                <StyledAbout exact="true" activeclassname="active" className="about-link" to="/about" aria-label={t('sidebar.about')} aftertext={afterAbout}>
                     <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
-                </NavLink>
-                <NavLink exact="true" activeclassname="active" className="skills-link" to="/skills" aria-label="Compétences">
+                </StyledAbout>
+                <StyledSkills exact="true" activeclassname="active" className="skills-link" to="/skills" aria-label={t('sidebar.skills')} aftertext={afterSkills}>
                     <FontAwesomeIcon icon={faGear} color="#4d4d4e" />
-                </NavLink>
-                <NavLink exact="true" activeclassname="active" className="portfolio-link" to="/portfolio" aria-label="Projets">
+                </StyledSkills>
+                <StyledProjects exact="true" activeclassname="active" className="portfolio-link" to="/portfolio" aria-label={t('sidebar.projects')} aftertext={afterProjects}>
                     <FontAwesomeIcon icon={faSuitcase} color="#4d4d4e" />
-                </NavLink>
-                <NavLink exact="true" activeclassname="active" className="contact-link" to="/contact" aria-label="Contact">
+                </StyledProjects>
+                <StyledContact exact="true" activeclassname="active" className="contact-link" to="/contact" aria-label={t('sidebar.contact')} aftertext={afterContact}>
                     <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
-                </NavLink>
+                </StyledContact>
             </nav>
             <ul className={hamburgerOpen ? 'hamburger-open' : ''}>
                 <li>

@@ -11,6 +11,13 @@
         "skills": "Compétences",
         "links": "Liens"
     },
+    "sidebar": {
+        "home": "accueil",
+        "about": "à propos",
+        "skills": "savoirs faire",
+        "projects": "projets",
+        "contact": "contact"
+    },
     "dataProjects": {
         "personal": [
             {

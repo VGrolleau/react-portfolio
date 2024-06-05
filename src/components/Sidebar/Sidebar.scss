@@ -89,37 +89,37 @@
                 text-transform: uppercase;
                 text-align: center;
             }
-
-            &:first-child {
-                &::after {
-                    content: "accueil";
-                }
-            }
         }
 
-        a.about-link {
-            &:after {
-                content: "à propos";
-            }
-        }
+        // a.home-link {
+        //     &::after {
+        //         content: "accueil";
+        //     }
+        // }
 
-        a.skills-link {
-            &:after {
-                content: "savoirs faire";
-            }
-        }
+        // a.about-link {
+        //     &:after {
+        //         content: "à propos";
+        //     }
+        // }
 
-        a.portfolio-link {
-            &:after {
-                content: "projets";
-            }
-        }
+        // a.skills-link {
+        //     &:after {
+        //         content: "savoirs faire";
+        //     }
+        // }
 
-        a.contact-link {
-            &:after {
-                content: "contact";
-            }
-        }
+        // a.portfolio-link {
+        //     &:after {
+        //         content: "projets";
+        //     }
+        // }
+
+        // a.contact-link {
+        //     &:after {
+        //         content: "contact";
+        //     }
+        // }
 
         a.active {
             svg {
