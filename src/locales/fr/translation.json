@@ -845,5 +845,21 @@
         "job": "développeuse web.",
         "subtitle": "Développeuse Fullstack / Spécialisée ReactJS",
         "contact": "Me contacter"
+    },
+    "contact": {
+        "title": "Me contacter",
+        "userNameError": "Le nom doit comporter au moins 2 caractères et ne peut contenir que des lettres, des apostrophes, des tirets et des espaces.",
+        "userEmailError": "Veuillez entrer une adresse e-mail valide.",
+        "subjectError": "L'objet doit comporter au moins 3 caractères.",
+        "messageError": "Le message doit comporter au moins 10 caractères.",
+        "alertSuccess": "Message envoyé avec succès !",
+        "alertFail": "Échec de l'envoi du message, recommencez s'il vous plaît",
+        "firstParagraph": "Je suis toujours à la recherche de nouveaux défis et de projets passionnants à réaliser. En tant que développeuse web freelance spécialisée en développement Front-End, je suis disponible pour discuter de vos besoins et vous apporter des solutions personnalisées.",
+        "secondParagraph": "N'hésitez pas à me contacter pour échanger sur votre projet ou toute autre demande ; je me ferai un plaisir de vous répondre rapidement et de collaborer avec vous pour concrétiser vos idées.",
+        "placeholderName": "Nom",
+        "placeholderEmail": "Email",
+        "placeholderSubject": "Objet",
+        "placeholderMessage": "Message",
+        "send": "Envoyer"
     }
 }

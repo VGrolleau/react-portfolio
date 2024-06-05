@@ -845,5 +845,21 @@
         "job": "web developer.",
         "subtitle": "Fullstack Developer / Spécialised in ReactJS",
         "contact": "Contact me"
+    },
+    "contact": {
+        "title": "Contact me",
+        "userNameError": "The name must be at least 2 characters long and can only contain letters, apostrophes, hyphens, and spaces.",
+        "userEmailError": "Please enter a valid email address.",
+        "subjectError": "The subject must be at least 3 characters long.",
+        "messageError": "The message must be at least 10 characters long.",
+        "alertSuccess": "Message sent successfully !",
+        "alertFail": "Failed to send message, please try again",
+        "firstParagraph": "I am always looking for new challenges and exciting projects to carry out. As a freelance web developer specializing in Front-End development, I am available to discuss your needs and provide you with personalized solutions.",
+        "secondParagraph": "Do not hesitate to contact me to discuss your project or any other request; I will be happy to respond quickly and work with you to bring your ideas to life.",
+        "placeholderName": "Name",
+        "placeholderEmail": "Email",
+        "placeholderSubject": "Subject",
+        "placeholderMessage": "Message",
+        "send": "Send"
     }
 }

@@ -1,17 +1,19 @@
 import './Contact.scss';
-import { useEffect, useRef, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet';
 import AnimatedLetters from '../../components/AnimatedLetters/AnimatedLetters';
+import { useTranslation } from 'react-i18next';
 
 /**
  * Component for rendering the Contact page.
  */
 const Contact = () => {
+    const { t, i18n } = useTranslation();
     const [showContent, setShowContent] = useState(false);
     const [letterClass, setLetterClass] = useState('text-animate');
     const [errors, setErrors] = useState({});
-    const titleArray = ['M', 'e', ' ', 'c', 'o', 'n', 't', 'a', 'c', 't', 'e', 'r'];
+    const titleArray = t('contact.title').split('');
 
     // Show content after a delay
     useEffect(() => {
@@ -32,27 +34,43 @@ const Contact = () => {
     const refForm = useRef();
 
     // Validate form input fields
-    const validate = (name, value) => {
+    const validate = useCallback((name, value) => {
         switch (name) {
             case 'user_name':
-                return /^[A-Za-zÀ-ÿ '-]{2,}$/.test(value) ? '' : 'Le nom doit comporter au moins 2 caractères et ne peut contenir que des lettres, des apostrophes, des tirets et des espaces.';
+                return /^[A-Za-zÀ-ÿ '-]{2,}$/.test(value) ? '' : t('contact.userNameError');
             case 'user_email':
-                return /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/.test(value) ? '' : 'Veuillez entrer une adresse e-mail valide.';
+                return /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/.test(value) ? '' : t('contact.userEmailError');
             case 'subject':
-                return value.length >= 3 ? '' : "L'objet doit comporter au moins 3 caractères.";
+                return value.length >= 3 ? '' : t('contact.subjectError');
             case 'message':
-                return value.length >= 10 ? '' : 'Le message doit comporter au moins 10 caractères.';
+                return value.length >= 10 ? '' : t('contact.messageError');
             default:
                 return '';
         }
-    };
+    }, [t]);
 
-    // Handle form input change
     const handleChange = (e) => {
         const { name, value } = e.target;
-        const error = validate(name, value);
+        const error = validate(name, value); // Utiliser validate ici
         setErrors((prevErrors) => ({ ...prevErrors, [name]: error }));
     };
+
+    // Utiliser validate dans le tableau de dépendances de useEffect
+    useEffect(() => {
+        // Valider le formulaire lorsque la langue change
+        const form = refForm.current;
+        const formData = new FormData(form);
+        let newErrors = {};
+
+        formData.forEach((value, key) => {
+            const error = validate(key, value);
+            if (error) {
+                newErrors[key] = error;
+            }
+        });
+
+        setErrors(newErrors);
+    }, [i18n.language, validate]);
 
     // Send email using EmailJS
     const sendEmail = (e) => {
@@ -77,11 +95,11 @@ const Contact = () => {
             emailjs.sendForm("service_vgrolleau", "template_vgrolleau", refForm.current, "PRikGgLu4Y4aBE_WI")
                 .then(() => {
                     console.log('SUCCESS!');
-                    alert('Message envoyé avec succès !');
+                    alert(t('contact.alertSuccess'));
                     window.location.reload(false);
                 }, (error) => {
                     console.log('FAILED...', error);
-                    alert("Échec de l'envoi du message, recommencez s'il vous plaît");
+                    alert(t('contact.alertFail'));
                 });
         }
     };
@@ -95,12 +113,8 @@ const Contact = () => {
                             <AnimatedLetters letterClass={letterClass} charactersArray={titleArray} index={10} />
                         </h1>
 
-                        <p>
-                            Je suis toujours à la recherche de nouveaux défis et de projets passionnants à réaliser. En tant que développeuse web freelance spécialisée en développement Front-End, je suis disponible pour discuter de vos besoins et vous apporter des solutions personnalisées.
-                        </p>
-                        <p>
-                            N'hésitez pas à me contacter pour échanger sur votre projet ou toute autre demande ; je me ferai un plaisir de vous répondre rapidement et de collaborer avec vous pour concrétiser vos idées.
-                        </p>
+                        <p>{t('contact.firstParagraph')}</p>
+                        <p>{t('contact.secondParagraph')}</p>
 
                         <div className='contact-form'>
                             <form ref={refForm} onSubmit={sendEmail}>
@@ -109,7 +123,7 @@ const Contact = () => {
                                         <input
                                             type='text'
                                             name='user_name'
-                                            placeholder='Nom'
+                                            placeholder={t('contact.placeholderName')}
                                             required
                                             onChange={handleChange}
                                         />
@@ -119,7 +133,7 @@ const Contact = () => {
                                         <input
                                             type='email'
                                             name='user_email'
-                                            placeholder='Email'
+                                            placeholder={t('contact.placeholderEmail')}
                                             required
                                             onChange={handleChange}
                                         />
@@ -129,7 +143,7 @@ const Contact = () => {
                                         <input
                                             type='text'
                                             name='subject'
-                                            placeholder='Objet'
+                                            placeholder={t('contact.placeholderSubject')}
                                             required
                                             onChange={handleChange}
                                         />
@@ -138,14 +152,14 @@ const Contact = () => {
                                     <li>
                                         <textarea
                                             name='message'
-                                            placeholder='Message'
+                                            placeholder={t('contact.placeholderMessage')}
                                             required
                                             onChange={handleChange}
                                         />
                                         {errors.message && <span className="error">{errors.message}</span>}
                                     </li>
                                     <li>
-                                        <input type='submit' className='flat-button' value='envoyer' />
+                                        <input type='submit' className='flat-button' value={t('contact.send')} />
                                     </li>
                                 </ul>
                             </form>
