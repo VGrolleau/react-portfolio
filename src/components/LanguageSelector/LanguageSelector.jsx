@@ -11,9 +11,9 @@ const LanguageSelector = () => {
     return (
         <>
             {i18n.language === 'fr' ? (
-                <button onClick={() => changeLanguage('en')}>FR</button>
+                <button className='lang-button' onClick={() => changeLanguage('en')}>FR</button>
             ) : (
-                <button onClick={() => changeLanguage('fr')}>EN</button>
+                <button className='lang-button' onClick={() => changeLanguage('fr')}>EN</button>
             )}
         </>
     )

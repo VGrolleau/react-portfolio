@@ -1,0 +1,13 @@
+.lang-button {
+    margin-bottom: 20px;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    .lang-button {
+        margin-bottom: 0;
+    }
+}
