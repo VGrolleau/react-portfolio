@@ -13,7 +13,7 @@ const Portfolio = () => {
 
     const [showContent, setShowContent] = useState(false);
     const [letterClass, setLetterClass] = useState('text-animate');
-    const titleArray = t('title.projects').split('');
+    const titleArray = t('projects.title').split('');
     const [activeLiIndex, setActiveLiIndex] = useState(null);
     const [animationKey, setAnimationKey] = useState(0);
 

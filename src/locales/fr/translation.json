@@ -1,7 +1,4 @@
 {
-    "title": {
-        "projects": "Mes projets"
-    },
     "loader": {
         "work": "Travail en cours"
     },
@@ -17,6 +14,9 @@
         "skills": "savoirs faire",
         "projects": "projets",
         "contact": "contact"
+    },
+    "projects": {
+        "title": "Mes projets"
     },
     "dataProjects": {
         "personal": [
@@ -728,6 +728,12 @@
                 "imageURL": "assets/images/projects/booki.png"
             }
         ]
+    },
+    "about": {
+        "title": "À propos de moi",
+        "firstParagraph": "Diplômée Développeuse d’Application JavaScript React via OpenClassrooms, je suis actuellement développeuse web freelance spécialisée en développement Front-End. Mon parcours atypique, allant du secteur sanitaire et social à des métiers manuels comme la menuiserie et la cuisine, m’a finalement conduit à ma véritable vocation : le développement web. Grâce à des formations solides, notamment auprès de l’ENI École Informatique et OpenClassrooms, j’ai acquis les compétences nécessaires pour créer des sites web et des applications performants et esthétiquement plaisants.",
+        "secondParagraph": "Ce qui me passionne le plus dans ce domaine, c’est de parvenir à un résultat à la fois fonctionnel et visuellement attrayant. Mon sens artistique, renforcé par mes compétences en dessin, me permet de concevoir des projets qui allient performance technique et design soigné. En tant que développeuse Front-End, je m’efforce de constamment me perfectionner pour offrir des solutions innovantes et efficaces à mes clients.",
+        "thirdParagraph": "En tant que freelance, je suis disponible pour collaborer sur des projets variés, qu'il s'agisse de développement front-end, de conception d’applications web ou de création de contenus interactifs. Mon approche est centrée sur la satisfaction du client et l'atteinte d'un haut niveau d'excellence dans chaque projet."
     },
     "dataCanvas": [
         {

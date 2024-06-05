@@ -1,7 +1,4 @@
 {
-    "title": {
-        "projects": "My projects"
-    },
     "loader": {
         "work": "Work in progress"
     },
@@ -17,6 +14,9 @@
         "skills": "skills",
         "projects": "projects",
         "contact": "contact"
+    },
+    "projects": {
+        "title": "My projects"
     },
     "dataProjects": {
         "personal": [
@@ -728,6 +728,12 @@
                 "imageURL": "assets/images/projects/booki.png"
             }
         ]
+    },
+    "about": {
+        "title": "About me",
+        "firstParagraph": "Qualified React JavaScript Application Developer via OpenClassrooms, I am currently a freelance web developer specializing in Front-End development. My atypical career path, ranging from the health and social sector to manual professions such as carpentry and cooking, ultimately led me to my true vocation: web development. Thanks to solid training, notably at ENI École Informatique and OpenClassrooms, I acquired the necessary skills to create efficient and aesthetically pleasing websites and applications.",
+        "secondParagraph": "What excites me most in this field is achieving a result that is both functional and visually appealing. My artistic sense, reinforced by my drawing skills, allows me to design projects that combine technical performance and careful design. As a Front-End developer, I strive to constantly improve myself to offer innovative and effective solutions to my clients.",
+        "thirdParagraph": "As a freelancer, I am available to collaborate on various projects, whether front-end development, web application design or interactive content creation. My approach is focused on client satisfaction and achieving a high level of excellence in each project."
     },
     "dataCanvas": [
         {
