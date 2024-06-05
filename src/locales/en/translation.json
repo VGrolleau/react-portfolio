@@ -735,6 +735,15 @@
         "secondParagraph": "What excites me most in this field is achieving a result that is both functional and visually appealing. My artistic sense, reinforced by my drawing skills, allows me to design projects that combine technical performance and careful design. As a Front-End developer, I strive to constantly improve myself to offer innovative and effective solutions to my clients.",
         "thirdParagraph": "As a freelancer, I am available to collaborate on various projects, whether front-end development, web application design or interactive content creation. My approach is focused on client satisfaction and achieving a high level of excellence in each project."
     },
+    "skills": {
+        "title": "Skills",
+        "firstParagraph": "Specializing in Front-End development, including technologies such as",
+        "secondParagraph": "With a keen eye for aesthetics and solid experience in responsive and mobile-first website design, I create solutions that combine beauty and functionality. I make it a point to optimize my code to provide the best possible user experience, paying particular attention to accessibility. I am also available to provide ongoing support even after project completion, ensuring a successful and long-lasting collaboration. My commitment and passion for development guarantee quality results for your project.",
+        "thirdParagraph": "For more details on my background and skills, do not hesitate to visit",
+        "linkedin": "my LinkedIn profile",
+        "consult": "or to consult",
+        "cv": "my CV"
+    },
     "dataCanvas": [
         {
             "name": "HTML5",
@@ -757,11 +766,11 @@
             "url": "https://en.wikipedia.org/wiki/Web_accessibility"
         },
         {
-            "name": "Récit utilisateur",
+            "name": "User story",
             "url": "https://en.wikipedia.org/wiki/User_story"
         },
         {
-            "name": "Cas d'utilisation",
+            "name": "Use case",
             "url": "https://en.wikipedia.org/wiki/Use_case"
         },
         {

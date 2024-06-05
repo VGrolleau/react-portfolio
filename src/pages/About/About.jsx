@@ -14,7 +14,6 @@ const About = () => {
     const [showContent, setShowContent] = useState(false);
     const [letterClass, setLetterClass] = useState('text-animate');
     const titleArray = t('about.title').split('');
-    // const titleArray = ['À', ' ', 'p', 'r', 'o', 'p', 'o', 's', ' ', 'd', 'e', ' ', 'm', 'o', 'i'];
 
     // Show content after a delay
     useEffect(() => {

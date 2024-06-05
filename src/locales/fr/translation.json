@@ -735,6 +735,15 @@
         "secondParagraph": "Ce qui me passionne le plus dans ce domaine, c’est de parvenir à un résultat à la fois fonctionnel et visuellement attrayant. Mon sens artistique, renforcé par mes compétences en dessin, me permet de concevoir des projets qui allient performance technique et design soigné. En tant que développeuse Front-End, je m’efforce de constamment me perfectionner pour offrir des solutions innovantes et efficaces à mes clients.",
         "thirdParagraph": "En tant que freelance, je suis disponible pour collaborer sur des projets variés, qu'il s'agisse de développement front-end, de conception d’applications web ou de création de contenus interactifs. Mon approche est centrée sur la satisfaction du client et l'atteinte d'un haut niveau d'excellence dans chaque projet."
     },
+    "skills": {
+        "title": "Savoirs faire",
+        "firstParagraph": "Spécialisée en développement Front-End, y compris des technologies telles que",
+        "secondParagraph": "Avec un œil aiguisé pour l'esthétique et une solide expérience dans la conception de sites web responsive et mobile first, je crée des solutions qui allient beauté et fonctionnalité. Je mets un point d'honneur à optimiser mon code pour offrir la meilleure expérience utilisateur possible, en accordant une attention particulière à l'accessibilité. Je suis également disponible pour vous apporter un soutien continu même après l'achèvement du projet, assurant ainsi une collaboration réussie et durable. Mon engagement et ma passion pour le développement garantissent des résultats de qualité pour votre projet.",
+        "thirdParagraph": "Pour plus de détails sur mon parcours et mes compétences, n'hésitez pas à visiter",
+        "linkedin": "mon profil LinkedIn",
+        "consult": "ou à consulter",
+        "cv": "mon CV"
+    },
     "dataCanvas": [
         {
             "name": "HTML5",
