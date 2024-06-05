@@ -7,6 +7,10 @@ import PropTypes from 'prop-types';
 import UseCase from '../../assets/images/projects/Grolleau_Virginie_1_diagramme_cas_usage_102022.pdf';
 import UserStories from '../../assets/images/projects/Grolleau_Virginie_2_user_stories_102022.pdf';
 import Wireframes from '../../assets/images/projects/Grolleau_Virginie_3_maquettes_102022.pdf';
+import TestViews from '../../assets/images/projects/Grolleau_Virginie_2_rapport_test_views_092022.png';
+import TestContainer from '../../assets/images/projects/Grolleau_Virginie_3_rapport_test_containers_092022.png';
+import TestJest from '../../assets/images/projects/Grolleau_Virginie_4_rapport_couverture_092022.png';
+import EndToEnd from '../../assets/images/projects/Grolleau_Virginie_5_plan_test_092022.pdf';
 
 /**
  * Modal component displays project details in a modal.
@@ -103,9 +107,43 @@ const Modal = ({ isOpen, selectedData, onClose }) => {
                                             }
                                         })
                                         :
-                                        skills.map((skill, index) => (
-                                            <li key={index}>{skill}</li>
-                                        ))
+                                        data.name === "Billed" ?
+                                            skills.map((skill, index) => {
+                                                switch (index) {
+                                                    case 0:
+                                                        return (
+                                                            <li key={index}>
+                                                                <a rel='noreferrer' target="_blank" href={TestContainer}>{skill}</a>
+                                                            </li>
+                                                        )
+                                                    case 1:
+                                                        return (
+                                                            <li key={index}>
+                                                                <a rel='noreferrer' target="_blank" href={TestViews}>{skill}</a>
+                                                            </li>
+                                                        )
+                                                    case 2:
+                                                        return (
+                                                            <li key={index}>
+                                                                <a rel='noreferrer' target="_blank" href={TestJest}>{skill}</a>
+                                                            </li>
+                                                        )
+                                                    case 3:
+                                                        return (
+                                                            <li key={index}>
+                                                                <a rel='noreferrer' target="_blank" href={EndToEnd}>{skill}</a>
+                                                            </li>
+                                                        )
+                                                    default:
+                                                        return (
+                                                            <li key={index}>{skill}</li>
+                                                        )
+                                                }
+                                            })
+                                            :
+                                            skills.map((skill, index) => (
+                                                <li key={index}>{skill}</li>
+                                            ))
                                 }
                             </ul>
                         </div>

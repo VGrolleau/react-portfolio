@@ -583,7 +583,9 @@ export const dataProjects = [
                     ]
                 },
                 skills: [
-                    "Rapports de test (containers, views) et de couverture Jest",
+                    "Rapports de test containers",
+                    "Rapports de test views",
+                    "Rapports de couverture Jest",
                     "Plan de tests End-to-End"
                 ],
                 links: {
