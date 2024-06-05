@@ -1,5 +1,819 @@
 {
+    "title": {
+        "projects": "My projects"
+    },
     "loader": {
         "work": "Work in progress"
-    }
+    },
+    "modal": {
+        "personal": "Personal",
+        "category": "Category",
+        "skills": "Skills",
+        "links": "Links"
+    },
+    "dataProjects": {
+        "personal": [
+            {
+                "name": "The Battle",
+                "description": {
+                    "text": "Personal project for a card game called “The Battle”. Allows you to play a simplified version of the battle with a 32-card deck against the computer.",
+                    "li": [
+                        {
+                            "content": "",
+                            "sublevel": []
+                        }
+                    ]
+                },
+                "skills": ["HTML5", "CSS3", "JavaScript"],
+                "links": {
+                    "github": {
+                        "frontend": {
+                            "text": "GitHub",
+                            "url": "https://github.com/VGrolleau/war-card-game"
+                        },
+                        "backend": {
+                            "text": "",
+                            "url": ""
+                        },
+                        "other": {
+                            "text": "",
+                            "url": ""
+                        }
+                    },
+                    "site": {
+                        "app": {
+                            "text": "La bataille site",
+                            "url": "https://virginiegrolleau.com/sites/jeux/war-card-game/"
+                        },
+                        "other": {
+                            "text": "",
+                            "url": ""
+                        }
+                    }
+                },
+                "imageURL": "assets/images/projects/bataille.png"
+            },
+            {
+                "name": "Forest walk",
+                "description": {
+                    "text": "A personal story project in which you are the hero. It allows you to escape into a unique fantasy story as you wander through the forest. But sometimes, if you take one path or another, you may find yourself quite bored...",
+                    "li": [
+                        {
+                            "content": "",
+                            "sublevel": []
+                        }
+                    ]
+                },
+                "skills": [
+                    "HTML5",
+                    "CSS3",
+                    "JavaScript",
+                    "Story writing",
+                    "Reflection on the mapping of the walk"
+                ],
+                "links": {
+                    "github": {
+                        "frontend": {
+                            "text": "GitHub",
+                            "url": "https://github.com/VGrolleau/forest-game"
+                        },
+                        "backend": {
+                            "text": "",
+                            "url": ""
+                        },
+                        "other": {
+                            "text": "",
+                            "url": ""
+                        }
+                    },
+                    "site": {
+                        "app": {
+                            "text": "Forest walk site",
+                            "url": "https://virginiegrolleau.com/sites/jeux/forest-game/"
+                        },
+                        "other": {
+                            "text": "",
+                            "url": ""
+                        }
+                    }
+                },
+                "imageURL": "assets/images/projects/promenade-en-foret.png"
+            },
+            {
+                "name": "Brick-breaker",
+                "description": {
+                    "text": "Personal project for a brick-breaker game. The game can be paused, muted and unmuted, and the paddle can be manipulated both with the mouse and the keyboard (arrow keys).",
+                    "li": [
+                        {
+                            "content": "",
+                            "sublevel": []
+                        }
+                    ]
+                },
+                "skills": ["HTML5", "CSS3", "JavaScript", "Algorithms"],
+                "links": {
+                    "github": {
+                        "frontend": {
+                            "text": "GitHub",
+                            "url": "https://github.com/VGrolleau/casse-briques"
+                        },
+                        "backend": {
+                            "text": "",
+                            "url": ""
+                        },
+                        "other": {
+                            "text": "",
+                            "url": ""
+                        }
+                    },
+                    "site": {
+                        "app": {
+                            "text": "Brick-breaker site",
+                            "url": "https://virginiegrolleau.com/sites/jeux/casse-briques/"
+                        },
+                        "other": {
+                            "text": "",
+                            "url": ""
+                        }
+                    }
+                },
+                "imageURL": "assets/images/projects/casse-briques.png"
+            },
+            {
+                "name": "Memory panda",
+                "description": {
+                    "text": "Personal memory game project in the form of pairs of cards to be found with animals as characters. Includes a score when pairs are matched, a countdown when you get it wrong, and a musical surprise when you win.",
+                    "li": [
+                        {
+                            "content": "",
+                            "sublevel": []
+                        }
+                    ]
+                },
+                "skills": [
+                    "HTML5",
+                    "CSS3",
+                    "JavaScript",
+                    "Form",
+                    "Youtube video integration in a modal window"
+                ],
+                "links": {
+                    "github": {
+                        "frontend": {
+                            "text": "GitHub",
+                            "url": "https://github.com/VGrolleau/memory-panda"
+                        },
+                        "backend": {
+                            "text": "",
+                            "url": ""
+                        },
+                        "other": {
+                            "text": "",
+                            "url": ""
+                        }
+                    },
+                    "site": {
+                        "app": {
+                            "text": "Memory panda site",
+                            "url": "https://virginiegrolleau.com/sites/jeux/memory-panda/"
+                        },
+                        "other": {
+                            "text": "",
+                            "url": ""
+                        }
+                    }
+                },
+                "imageURL": "assets/images/projects/memory-panda.png"
+            }
+        ],
+        "openclassrooms": [
+            {
+                "name": "HRNet",
+                "description": {
+                    "text": "Project based on an internal web application that manages the employee files of a large financial company. The objective is to upgrade the site from JQuery to React. Here's a summary of the main tasks:",
+                    "li": [
+                        {
+                            "content": "Convert the entire project to React.",
+                            "sublevel": []
+                        },
+                        {
+                            "content": "Convert one of the four current jQuery plugins to React. Replace the remaining 3 jQuery plugins with React components, either by coding them or importing them from existing libraries.",
+                            "sublevel": []
+                        },
+                        {
+                            "content": "Perform Lighthouse performance tests comparing the old and new applications.",
+                            "sublevel": []
+                        }
+                    ]
+                },
+                "skills": [
+                    "Converting a JQuery application to React",
+                    "Choosing the most appropriate design for your logo",
+                    "Redux status management system",
+                    "Setting up a Back-End with Express, Sequelize and MariaDB database",
+                    "Transformation of JQuery plugins (date selection, modal window and table) into React via existing components",
+                    "Transforming the JQuery drop-down menu plugin into React via its creation",
+                    "Publishing the created plugin on npm"
+                ],
+                "links": {
+                    "github": {
+                        "frontend": {
+                            "text": "Frontend",
+                            "url": "https://github.com/VGrolleau/p14-hrnet-v2-front"
+                        },
+                        "backend": {
+                            "text": "Backend",
+                            "url": "https://github.com/VGrolleau/p14-hrnet-v2-back"
+                        },
+                        "other": {
+                            "text": "Dropdown menu component",
+                            "url": "https://github.com/VGrolleau/dropdown-menu-component"
+                        }
+                    },
+                    "site": {
+                        "app": {
+                            "text": "",
+                            "url": ""
+                        },
+                        "other": {
+                            "text": "Dropdown menu npm",
+                            "url": "https://www.npmjs.com/package/dropdown-menu-component"
+                        }
+                    }
+                },
+                "imageURL": "assets/images/projects/HRnet.png"
+            },
+            {
+                "name": "ArgentBank",
+                "description": {
+                    "text": "Project based on the website of a new bank starting out and trying to break into the sector. The aim is to set up a web application enabling customers to log in and manage their accounts and profile. The development is divided into 2 phases:",
+                    "li": [
+                        {
+                            "content": "Phase 1 : User authentication :",
+                            "sublevel": [
+                                "Create the complete, responsive application in React.",
+                                "Use Redux to manage the state."
+                            ]
+                        },
+                        {
+                            "content": "Phase 2 : Transactions :",
+                            "sublevel": [
+                                "Provide a document describing the proposed APIs for transactions, following Swagger guidelines."
+                            ]
+                        }
+                    ]
+                },
+                "skills": [
+                    "Redux toolkit",
+                    "Managing GitHub Issues",
+                    "YAML file using Swagger syntax and specifying API endpoints for the “transactions” phase"
+                ],
+                "links": {
+                    "github": {
+                        "frontend": {
+                            "text": "Frontend",
+                            "url": "https://github.com/VGrolleau/p13-argentbank-frontend"
+                        },
+                        "backend": {
+                            "text": "Backend",
+                            "url": "https://github.com/VGrolleau/P13-ArgentBank-API"
+                        },
+                        "other": {
+                            "text": "",
+                            "url": ""
+                        }
+                    },
+                    "site": {
+                        "app": {
+                            "text": "",
+                            "url": ""
+                        },
+                        "other": {
+                            "text": "",
+                            "url": ""
+                        }
+                    }
+                },
+                "imageURL": "assets/images/projects/argentBank.png"
+            },
+            {
+                "name": "SportSee",
+                "description": {
+                    "text": "Project based on the website of a sports coaching startup. The aim is to develop a new version of the user's profile page. In particular, this page will enable the user to track the number of sessions completed, as well as the number of calories burned. To do this, we need to integrate D3 or Recharts (my choice for this project) graphs of the user's sporting activity. As for the data, we need to make calls to the back-end in NodeJS. To manage these calls, we need to use either Fetch (my choice) or Axios, and make them outside the React components via a separate service. The site also needs a data modeling class to ensure that data is properly formatted. Last but not least, the code must be well documented, via capsules and PropTypes in the latter, but also via the Readme.",
+                    "li": [
+                        {
+                            "content": "",
+                            "sublevel": []
+                        }
+                    ]
+                },
+                "skills": [
+                    "Graphics integration (Recharts)",
+                    "Creation of an API data mock",
+                    "HTTP calls / API calls to retrieve data (separate service)",
+                    "Creation of a modeling class",
+                    "Documentation (Readme, code capsules)"
+                ],
+                "links": {
+                    "github": {
+                        "frontend": {
+                            "text": "Frontend",
+                            "url": "https://github.com/VGrolleau/P12-SportSee-Front"
+                        },
+                        "backend": {
+                            "text": "Backend",
+                            "url": "https://github.com/VGrolleau/P12-SportSee-Back"
+                        },
+                        "other": {
+                            "text": "",
+                            "url": ""
+                        }
+                    },
+                    "site": {
+                        "app": {
+                            "text": "",
+                            "url": ""
+                        },
+                        "other": {
+                            "text": "",
+                            "url": ""
+                        }
+                    }
+                },
+                "imageURL": "assets/images/projects/sportSee.png"
+            },
+            {
+                "name": "Kasa",
+                "description": {
+                    "text": "Project based on a web platform for renting apartments between individuals. The aim is to start the React project and develop the whole application, the React components, the React Router routes, following the Figma mockups (responsives) and all the information given. A few details on the site's functionalities:",
+                    "li": [
+                        {
+                            "content": "For scrolling photos in the gallery (Gallery component) :",
+                            "sublevel": [
+                                "If the user is at the first image and clicks on “previous image”, the gallery displays the last image.",
+                                "Conversely, when the image displayed is the last in the gallery, if the user clicks on “next image”, the gallery displays the first image.",
+                                "If there is only one image, the “next” and “previous” buttons and numbering do not appear."
+                            ]
+                        },
+                        {
+                            "content": "The gallery must always be the same height as shown on the Figma layout. Images will therefore be cut and centered within the image frame.",
+                            "sublevel": []
+                        },
+                        {
+                            "content": "Collapse: By default, collapses are closed when the page is initialized.",
+                            "sublevel": [
+                                "If a Collapse is open, clicking on it will close it.",
+                                "Conversely, if the Collapse is closed, a click opens it."
+                            ]
+                        }
+                    ]
+                },
+                "skills": ["React (components, hook)", "React router", "SASS"],
+                "links": {
+                    "github": {
+                        "frontend": {
+                            "text": "Frontend",
+                            "url": "https://github.com/VGrolleau/kasa"
+                        },
+                        "backend": {
+                            "text": "",
+                            "url": ""
+                        },
+                        "other": {
+                            "text": "",
+                            "url": ""
+                        }
+                    },
+                    "site": {
+                        "app": {
+                            "text": "Kasa site",
+                            "url": "https://vgrolleau.github.io/kasa/"
+                        },
+                        "other": {
+                            "text": "",
+                            "url": ""
+                        }
+                    }
+                },
+                "imageURL": "assets/images/projects/kasa.png"
+            },
+            {
+                "name": "Learn@Home",
+                "description": {
+                    "text": "Project based on a tutoring application enabling students and volunteers from an association to communicate more easily. The aim is to frame the project and then coordinate all developments. To do this, we need to produce use case diagrams for each of the major functionalities of each page, user stories with acceptance criteria for each of the functionalities, site mock-ups with a simple design and at least one mock-up per page, and a Kanban breaking down the project.",
+                    "li": [
+                        {
+                            "content": "",
+                            "sublevel": []
+                        }
+                    ]
+                },
+                "skills": [
+                    "Use case diagrams",
+                    "User stories",
+                    "Wireframe creation (Figma)",
+                    "Kanban"
+                ],
+                "links": {
+                    "github": {
+                        "frontend": {
+                            "text": "",
+                            "url": ""
+                        },
+                        "backend": {
+                            "text": "",
+                            "url": ""
+                        },
+                        "other": {
+                            "text": "",
+                            "url": ""
+                        }
+                    },
+                    "site": {
+                        "app": {
+                            "text": "",
+                            "url": ""
+                        },
+                        "other": {
+                            "text": "",
+                            "url": ""
+                        }
+                    }
+                },
+                "imageURL": "assets/images/projects/learnAtHome.png"
+            },
+            {
+                "name": "Billed",
+                "description": {
+                    "text": "Project based on an expense claim application. The aim is, firstly, to debug the administrator path, and test and debug the entire employee path. To do this, use Chrome Debugger. Secondly, we need to test the site using Jest and create an end-to-end test plan.",
+                    "li": [
+                        {
+                            "content": "",
+                            "sublevel": []
+                        }
+                    ]
+                },
+                "skills": [
+                    "Container test reports",
+                    "View test reports",
+                    "Jest coverage reports",
+                    "End-to-End test plan"
+                ],
+                "links": {
+                    "github": {
+                        "frontend": {
+                            "text": "Frontend",
+                            "url": "https://github.com/VGrolleau/Billed-app-FR-Front"
+                        },
+                        "backend": {
+                            "text": "Backend",
+                            "url": "https://github.com/OpenClassrooms-Student-Center/Billed-app-FR-back"
+                        },
+                        "other": {
+                            "text": "",
+                            "url": ""
+                        }
+                    },
+                    "site": {
+                        "app": {
+                            "text": "",
+                            "url": ""
+                        },
+                        "other": {
+                            "text": "",
+                            "url": ""
+                        }
+                    }
+                },
+                "imageURL": "assets/images/projects/billed.png"
+            },
+            {
+                "name": "Les petits plats",
+                "description": {
+                    "text": "Project based on a recipe site like Marmiton or 750g. The aim is to develop a search and filter functionality, while respecting the defined design to the letter. To achieve this, the site has to be built using use cases, planning 2 versions of the search functionality algorithm, and filling in the functionality investigation document. Of course, JSBen.ch tests had to be carried out to compare performance.",
+                    "li": [
+                        {
+                            "content": "",
+                            "sublevel": []
+                        }
+                    ]
+                },
+                "skills": [
+                    "Understanding of use case files",
+                    "Planning 2 versions of search functionality",
+                    "Native loops(while, for…)",
+                    "Functional programming with array object methods(foreach, filter, map, reduce)",
+                    "Completing the functionality investigation document",
+                    "Algorigram",
+                    "Implement 2 versions of search functionality",
+                    "JsBen.ch performance test"
+                ],
+                "links": {
+                    "github": {
+                        "frontend": {
+                            "text": "Frontend",
+                            "url": "https://github.com/VGrolleau/les-petits-plats"
+                        },
+                        "backend": {
+                            "text": "",
+                            "url": ""
+                        },
+                        "other": {
+                            "text": "",
+                            "url": ""
+                        }
+                    },
+                    "site": {
+                        "app": {
+                            "text": "Les petits plats site",
+                            "url": "https://vgrolleau.github.io/les-petits-plats/"
+                        },
+                        "other": {
+                            "text": "",
+                            "url": ""
+                        }
+                    }
+                },
+                "imageURL": "assets/images/projects/les-petits-plats.png"
+            },
+            {
+                "name": "FishEye",
+                "description": {
+                    "text": "Project based on a website that allows freelance photographers to present their best work. The aim is to build a functional prototype in HTML, CSS and JavaScript, with accessibility as its top priority; it must therefore be usable by screen readers.The site also uses the Factory Method pattern.",
+                    "li": [
+                        {
+                            "content": "",
+                            "sublevel": []
+                        }
+                    ]
+                },
+                "skills": [
+                    "JSON data import",
+                    "Fetch promises",
+                    "Accessibility (aria-label, AChecker)",
+                    "Factory Method pattern",
+                    "Modal window",
+                    "Lightbox",
+                    "Liking and sorting system",
+                    "ESlint"
+                ],
+                "links": {
+                    "github": {
+                        "frontend": {
+                            "text": "Frontend",
+                            "url": "https://github.com/VGrolleau/Front-End-Fisheye"
+                        },
+                        "backend": {
+                            "text": "",
+                            "url": ""
+                        },
+                        "other": {
+                            "text": "",
+                            "url": ""
+                        }
+                    },
+                    "site": {
+                        "app": {
+                            "text": "FishEye site",
+                            "url": "https://vgrolleau.github.io/Front-End-Fisheye/"
+                        },
+                        "other": {
+                            "text": "",
+                            "url": ""
+                        }
+                    }
+                },
+                "imageURL": "assets/images/projects/fisheye.png"
+            },
+            {
+                "name": "GameOn",
+                "description": {
+                    "text": "Project based on a video game site. The aim is to complete the responsive front- end of the site in JavaScript(i.e.the landing page), document the code and test it manually.",
+                    "li": [
+                        {
+                            "content": "",
+                            "sublevel": []
+                        }
+                    ]
+                },
+                "skills": [
+                    "Working on a forked GitHub repo",
+                    "JavaScript",
+                    "Comments in code",
+                    "Manual tests for functionality, form entries and responsive display"
+                ],
+                "links": {
+                    "github": {
+                        "frontend": {
+                            "text": "Frontend",
+                            "url": "https://github.com/VGrolleau/GameOn-website-FR"
+                        },
+                        "backend": {
+                            "text": "",
+                            "url": ""
+                        },
+                        "other": {
+                            "text": "",
+                            "url": ""
+                        }
+                    },
+                    "site": {
+                        "app": {
+                            "text": "GameOn site",
+                            "url": "https://vgrolleau.github.io/GameOn-website-FR/"
+                        },
+                        "other": {
+                            "text": "",
+                            "url": ""
+                        }
+                    }
+                },
+                "imageURL": "assets/images/projects/gameOn.png"
+            },
+            {
+                "name": "Ohmyfood",
+                "description": {
+                    "text": "Project based on a site listing gourmet restaurants’ menus. The aim is to develop this 100 % mobile site and integrate 4 menus from a brief.CSS animations such as a page loader are also required.",
+                    "li": [
+                        {
+                            "content": "",
+                            "sublevel": []
+                        }
+                    ]
+                },
+                "skills": [
+                    "Graphic effects and CSS animations (loader)",
+                    "Mobile, tablet and desktop responsive",
+                    "W3C HTML and CSS validators",
+                    "Compatibility with the Chrome and Firefox latest computer versions",
+                    "Versioning GitHub"
+                ],
+                "links": {
+                    "github": {
+                        "frontend": {
+                            "text": "Frontend",
+                            "url": "https://github.com/VGrolleau/VirginieGrolleau_3_02032022"
+                        },
+                        "backend": {
+                            "text": "",
+                            "url": ""
+                        },
+                        "other": {
+                            "text": "",
+                            "url": ""
+                        }
+                    },
+                    "site": {
+                        "app": {
+                            "text": "Ohmyfood site",
+                            "url": "https://vgrolleau.github.io/VirginieGrolleau_3_02032022/"
+                        },
+                        "other": {
+                            "text": "",
+                            "url": ""
+                        }
+                    }
+                },
+                "imageURL": "assets/images/projects/ohmyfood.png"
+            },
+            {
+                "name": "Booki",
+                "description": {
+                    "text": "Project based on a site that lets users find accommodation and activities in their choice’s city. Accommodations can also be filtered by theme, such as budget or ambiance. The aim is to create a prototype by integrating the HTML and CSS model with a design based on Material Design principles.",
+                    "li": [
+                        {
+                            "content": "",
+                            "sublevel": []
+                        }
+                    ]
+                },
+                "skills": [
+                    "HTML (Understanding and integrating a model)",
+                    "CSS (Normalize.css, Flexbox)",
+                    "W3C HTML and CSS validators"
+                ],
+                "links": {
+                    "github": {
+                        "frontend": {
+                            "text": "",
+                            "url": ""
+                        },
+                        "backend": {
+                            "text": "",
+                            "url": ""
+                        },
+                        "other": {
+                            "text": "",
+                            "url": ""
+                        }
+                    },
+                    "site": {
+                        "app": {
+                            "text": "Booki site",
+                            "url": "https://virginiegrolleau.com/sites/openclassrooms/booki/index.html"
+                        },
+                        "other": {
+                            "text": "",
+                            "url": ""
+                        }
+                    }
+                },
+                "imageURL": "assets/images/projects/booki.png"
+            }
+        ]
+    },
+    "dataCanvas": [
+        {
+            "name": "HTML5",
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTML"
+        },
+        {
+            "name": "CSS3",
+            "url": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+        },
+        {
+            "name": "Tailwind CSS",
+            "url": "https://tailwindcss.com/"
+        },
+        {
+            "name": "SASS",
+            "url": "https://sass-lang.com/"
+        },
+        {
+            "name": "Accessibility",
+            "url": "https://en.wikipedia.org/wiki/Web_accessibility"
+        },
+        {
+            "name": "Récit utilisateur",
+            "url": "https://en.wikipedia.org/wiki/User_story"
+        },
+        {
+            "name": "Cas d'utilisation",
+            "url": "https://en.wikipedia.org/wiki/Use_case"
+        },
+        {
+            "name": "Kanban",
+            "url": "https://en.wikipedia.org/wiki/Kanban"
+        },
+        {
+            "name": "JavaScript",
+            "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+        },
+        {
+            "name": "React",
+            "url": "https://react.dev"
+        },
+        {
+            "name": "Redux",
+            "url": "https://redux.js.org"
+        },
+        {
+            "name": "Jest",
+            "url": "https://jestjs.io"
+        },
+        {
+            "name": "MongoDB",
+            "url": "https://www.mongodb.com"
+        },
+        {
+            "name": "MariaDB",
+            "url": "https://mariadb.org/"
+        },
+        {
+            "name": "NodeJS",
+            "url": "https://nodejs.org/en"
+        },
+        {
+            "name": "Express.js",
+            "url": "https://expressjs.com/"
+        },
+        {
+            "name": "Sequelize",
+            "url": "https://sequelize.org/"
+        },
+        {
+            "name": "Docker",
+            "url": "https://www.docker.com/"
+        },
+        {
+            "name": "REST",
+            "url": "https://en.wikipedia.org/wiki/REST"
+        },
+        {
+            "name": "JSON",
+            "url": "https://en.wikipedia.org/wiki/JSON"
+        },
+        {
+            "name": "WordPress",
+            "url": "https://wordpress.org/"
+        },
+        {
+            "name": "Git",
+            "url": "https://git-scm.com/"
+        },
+        {
+            "name": "npm",
+            "url": "https://www.npmjs.com/"
+        }
+    ]
 }

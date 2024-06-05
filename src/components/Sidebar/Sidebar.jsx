@@ -30,19 +30,19 @@ const Sidebar = () => {
                 </svg>
             </Link>
             <nav className={hamburgerOpen ? 'hamburger-open' : ''}>
-                <NavLink exact activeClassName="active" to="/" aria-label="Accueil">
+                <NavLink exact="true" activeclassname="active" to="/" aria-label="Accueil">
                     <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
                 </NavLink>
-                <NavLink exact activeClassName="active" className="about-link" to="/about" aria-label="À propos">
+                <NavLink exact="true" activeclassname="active" className="about-link" to="/about" aria-label="À propos">
                     <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
                 </NavLink>
-                <NavLink exact activeClassName="active" className="skills-link" to="/skills" aria-label="Compétences">
+                <NavLink exact="true" activeclassname="active" className="skills-link" to="/skills" aria-label="Compétences">
                     <FontAwesomeIcon icon={faGear} color="#4d4d4e" />
                 </NavLink>
-                <NavLink exact activeClassName="active" className="portfolio-link" to="/portfolio" aria-label="Projets">
+                <NavLink exact="true" activeclassname="active" className="portfolio-link" to="/portfolio" aria-label="Projets">
                     <FontAwesomeIcon icon={faSuitcase} color="#4d4d4e" />
                 </NavLink>
-                <NavLink exact activeClassName="active" className="contact-link" to="/contact" aria-label="Contact">
+                <NavLink exact="true" activeclassname="active" className="contact-link" to="/contact" aria-label="Contact">
                     <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
                 </NavLink>
             </nav>

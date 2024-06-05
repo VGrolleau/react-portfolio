@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './Modal.scss';
 import { faClose, faLink } from '@fortawesome/free-solid-svg-icons';
@@ -20,13 +21,14 @@ import EndToEnd from '../../assets/images/projects/Grolleau_Virginie_5_plan_test
  * @param {function} props.onClose - Function to close the modal.
  */
 const Modal = ({ isOpen, selectedData, onClose }) => {
+    const { t } = useTranslation();
     const { data, category } = selectedData;
 
     // Convert category names for better readability
     let categoryName = category;
     switch (categoryName) {
         case "personal":
-            categoryName = "personnel";
+            categoryName = t('modal.personal');
             break;
         case "openclassrooms":
             categoryName = "OpenClassrooms";
@@ -66,11 +68,11 @@ const Modal = ({ isOpen, selectedData, onClose }) => {
                     <div className='modal-top-left'>
                         <h2>{data.name}</h2>
                         <div className='modal-category'>
-                            <h3>Catégorie</h3>
+                            <h3>{t('modal.category')}</h3>
                             <p>{categoryName}</p>
                         </div>
                         <div className='modal-skills'>
-                            <h3>Compétences</h3>
+                            <h3>{t('modal.skills')}</h3>
                             <ul>
                                 {
                                     data.name === "Learn@Home" ?
@@ -170,7 +172,7 @@ const Modal = ({ isOpen, selectedData, onClose }) => {
                 </div>
                 {!areAllFieldsEmpty(data.links) && (
                     <div className='modal-links'>
-                        <h3>Liens</h3>
+                        <h3>{t('modal.links')}</h3>
                         <div className='links'>
                             {Object.values(data.links).map((link, index) => (
                                 Object.values(link).map((linkItem, innerIndex) => (

@@ -1,16 +1,19 @@
 import { useEffect, useState } from 'react';
 import './Portfolio.scss';
-import { dataProjects } from '../../data';
 import AnimatedLetters from '../../components/AnimatedLetters/AnimatedLetters';
 import LiData from '../../components/LiData/LiData';
+import { useTranslation } from 'react-i18next';
 
 /**
  * Component for rendering the Portfolio page.
  */
 const Portfolio = () => {
+    const { t } = useTranslation();
+    const dataProjects = t('dataProjects', { returnObjects: true });
+
     const [showContent, setShowContent] = useState(false);
     const [letterClass, setLetterClass] = useState('text-animate');
-    const titleArray = ['M', 'e', 's', ' ', 'p', 'r', 'o', 'j', 'e', 't', 's'];
+    const titleArray = t('title.projects').split('');
     const [activeLiIndex, setActiveLiIndex] = useState(null);
     const [animationKey, setAnimationKey] = useState(0);
 
@@ -30,19 +33,11 @@ const Portfolio = () => {
         }, 5500);
     }, []);
 
-    // Extract personal and openclassrooms project data
-    let dataPersonal = [];
-    let dataOpenclassrooms = [];
-    dataProjects.forEach(data => {
-        dataPersonal.push(data.personal);
-        dataOpenclassrooms.push(data.openclassrooms);
-    });
-
     // Get the image URL for the active project
     const getImageUrl = () => {
         if (activeLiIndex !== null) {
             const [category, index] = activeLiIndex.split('-');
-            const data = category === 'personal' ? dataPersonal[0][index] : dataOpenclassrooms[0][index];
+            const data = category === 'personal' ? dataProjects.personal[index] : dataProjects.openclassrooms[index];
             return data.imageURL;
         }
         return null;
@@ -60,7 +55,7 @@ const Portfolio = () => {
                             {/* Render personal projects */}
                             <LiData
                                 category="personal"
-                                dataObject={dataPersonal[0]}
+                                dataObject={dataProjects.personal}
                                 activeLiIndex={activeLiIndex}
                                 setActiveLiIndex={setActiveLiIndex}
                                 setAnimationKey={setAnimationKey}
@@ -68,7 +63,7 @@ const Portfolio = () => {
                             {/* Render openclassrooms projects */}
                             <LiData
                                 category="openclassrooms"
-                                dataObject={dataOpenclassrooms[0]}
+                                dataObject={dataProjects.openclassrooms}
                                 activeLiIndex={activeLiIndex}
                                 setActiveLiIndex={setActiveLiIndex}
                                 setAnimationKey={setAnimationKey}
