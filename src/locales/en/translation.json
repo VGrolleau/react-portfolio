@@ -861,5 +861,9 @@
         "placeholderSubject": "Subject",
         "placeholderMessage": "Message",
         "send": "Send"
+    },
+    "error": {
+        "text": "Oops ! The page you are requesting does not exist.",
+        "backHome": "Return to home page"
     }
 }

@@ -861,5 +861,9 @@
         "placeholderSubject": "Objet",
         "placeholderMessage": "Message",
         "send": "Envoyer"
+    },
+    "error": {
+        "text": "Oups ! La page que vous demandez n'existe pas.",
+        "backHome": "Retourner à la page d'accueil"
     }
 }

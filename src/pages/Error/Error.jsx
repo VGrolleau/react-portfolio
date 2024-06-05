@@ -2,8 +2,10 @@ import { useEffect, useState } from 'react';
 import './Error.scss';
 import { Link } from 'react-router-dom';
 import AnimatedLetters from '../../components/AnimatedLetters/AnimatedLetters';
+import { useTranslation } from 'react-i18next';
 
 const Error = () => {
+    const { t } = useTranslation();
     const [showContent, setShowContent] = useState(false);
     const [letterClass, setLetterClass] = useState('text-animate');
     const titleArray = [4, 0, 4];
@@ -32,8 +34,8 @@ const Error = () => {
                         <h1>
                             <AnimatedLetters letterClass={letterClass} charactersArray={titleArray} index={10} />
                         </h1>
-                        <h2>Oups ! La page que vous demandez n'existe pas.</h2>
-                        <Link to="/" className="flat-button">Retourner à la page d'accueil</Link>
+                        <h2>{t('error.text')}</h2>
+                        <Link to="/" className="flat-button">{t('error.backHome')}</Link>
                     </div>
                 </div>
             )}
