@@ -837,5 +837,13 @@
             "name": "npm",
             "url": "https://www.npmjs.com/"
         }
-    ]
+    ],
+    "home": {
+        "hi": "Bonjour,",
+        "iAm": "Je suis",
+        "name": "irginie,",
+        "job": "développeuse web.",
+        "subtitle": "Développeuse Fullstack / Spécialisée ReactJS",
+        "contact": "Me contacter"
+    }
 }

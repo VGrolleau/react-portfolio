@@ -837,5 +837,13 @@
             "name": "npm",
             "url": "https://www.npmjs.com/"
         }
-    ]
+    ],
+    "home": {
+        "hi": "Hello,",
+        "iAm": "I am",
+        "name": "irginie,",
+        "job": "web developer.",
+        "subtitle": "Fullstack Developer / Spécialised in ReactJS",
+        "contact": "Contact me"
+    }
 }

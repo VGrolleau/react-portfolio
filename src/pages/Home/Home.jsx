@@ -3,17 +3,19 @@ import './Home.scss';
 import { useEffect, useState } from 'react';
 import AnimatedLetters from '../../components/AnimatedLetters/AnimatedLetters';
 import Logo from '../../components/Logo/Logo';
+import { useTranslation } from 'react-i18next';
 
 /**
  * Component for rendering the Home page.
  */
 const Home = () => {
+    const { t } = useTranslation();
     const [showContent, setShowContent] = useState(false);
     const [letterClass, setLetterClass] = useState('text-animate');
-    const hiArray = ['B', 'o', 'n', 'j', 'o', 'u', 'r', ','];
-    const iAmArray = ['J', 'e', ' ', 's', 'u', 'i', 's'];
-    const nameArray = ['i', 'r', 'g', 'i', 'n', 'i', 'e', ','];
-    const jobArray = ['d', 'é', 'v', 'e', 'l', 'o', 'p', 'p', 'e', 'u', 's', 'e', ' ', 'w', 'e', 'b', '.'];
+    const hiArray = t('home.hi').split('');
+    const iAmArray = t('home.iAm').split('');
+    const nameArray = t('home.name').split('');
+    const jobArray = t('home.job').split('');
 
     // Show content after a delay
     useEffect(() => {
@@ -48,8 +50,8 @@ const Home = () => {
                             <br />
                             <AnimatedLetters letterClass={letterClass} charactersArray={jobArray} index={33} />
                         </h1>
-                        <h2>Développeuse Fullstack / Spécialisée ReactJS</h2>
-                        <Link to="/contact" className="flat-button">Me contacter</Link>
+                        <h2>{t('home.subtitle')}</h2>
+                        <Link to="/contact" className="flat-button">{t('home.contact')}</Link>
                     </div>
                     <Logo />
                 </div>
