@@ -593,8 +593,8 @@ export const dataProjects = [
                             url: "https://github.com/VGrolleau/Billed-app-FR-Front"
                         },
                         backend: {
-                            text: "",
-                            url: ""
+                            text: "Backend",
+                            url: "https://github.com/OpenClassrooms-Student-Center/Billed-app-FR-back"
                         },
                         other: {
                             text: "",
