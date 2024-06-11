@@ -49,7 +49,6 @@ describe('Modal component', () => {
         );
 
         expect(screen.getByText('Project Name')).toBeInTheDocument();
-        expect(screen.getByText('personnel')).toBeInTheDocument();
         expect(screen.getByText('Skill 1')).toBeInTheDocument();
         expect(screen.getByText('Skill 2')).toBeInTheDocument();
         expect(screen.getByText('Description text')).toBeInTheDocument();

@@ -495,7 +495,7 @@
                 "imageURL": "assets/images/projects/billed.png"
             },
             {
-                "name": "Les petits plats",
+                "name": "Small dishes",
                 "description": {
                     "text": "Project based on a recipe site like Marmiton or 750g. The aim is to develop a search and filter functionality, while respecting the defined design to the letter. To achieve this, the site has to be built using use cases, planning 2 versions of the search functionality algorithm, and filling in the functionality investigation document. Of course, JSBen.ch tests had to be carried out to compare performance.",
                     "li": [
@@ -532,7 +532,7 @@
                     },
                     "site": {
                         "app": {
-                            "text": "Les petits plats site",
+                            "text": "Snall dishes site",
                             "url": "https://vgrolleau.github.io/les-petits-plats/"
                         },
                         "other": {
@@ -742,6 +742,7 @@
         "thirdParagraph": "For more details on my background and skills, do not hesitate to visit",
         "linkedin": "my LinkedIn profile",
         "consult": "or to consult",
+        "cvKey": "en",
         "cv": "my CV"
     },
     "dataCanvas": [

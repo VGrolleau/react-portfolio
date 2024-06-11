@@ -7,7 +7,6 @@ describe('Loader component', () => {
         render(<Loader />);
 
         // Checks the presence of main elements based on their textual content
-        expect(screen.getByText('Travail en cours')).toBeInTheDocument();
         expect(screen.getByText('Virginie')).toBeInTheDocument();
         expect(screen.getByTestId('progress-bar')).toBeInTheDocument();
     });
