@@ -9,6 +9,8 @@ import './Loader.scss';
  */
 const Loader = () => {
     const { t } = useTranslation();
+    const currentYear = new Date().getFullYear();
+
     return (
         <div className='preloader'>
             <div className='inner'>
@@ -22,6 +24,9 @@ const Loader = () => {
                     <div className='progress-bar_bg'>
                         <div></div>
                     </div>
+                </div>
+                <div className='copyright'>
+                    {t('loader.copyright')}{currentYear}
                 </div>
             </div>
         </div>

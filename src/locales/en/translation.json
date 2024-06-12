@@ -1,6 +1,7 @@
 {
     "loader": {
-        "work": "Work in progress"
+        "work": "Work in progress",
+        "copyright": "Created and developed by VGrolleau ©"
     },
     "modal": {
         "personal": "Personal",
