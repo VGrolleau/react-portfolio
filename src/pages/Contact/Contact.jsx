@@ -92,15 +92,19 @@ const Contact = () => {
         setErrors(newErrors);
 
         if (formIsValid) {
-            emailjs.sendForm("service_vgrolleau", "template_vgrolleau", refForm.current, "PRikGgLu4Y4aBE_WI")
-                .then(() => {
-                    console.log('SUCCESS!');
-                    alert(t('contact.alertSuccess'));
-                    window.location.reload(false);
-                }, (error) => {
-                    console.log('FAILED...', error);
-                    alert(t('contact.alertFail'));
-                });
+            emailjs.sendForm(
+                process.env.REACT_APP_EMAILJS_CONTACT_SERVICE,
+                process.env.REACT_APP_EMAILJS_CONTACT_FORM,
+                refForm.current,
+                process.env.REACT_APP_EMAILJS_PUBLIC_KEY
+            ).then(() => {
+                console.log('SUCCESS!');
+                alert(t('contact.alertSuccess'));
+                window.location.reload(false);
+            }, (error) => {
+                console.log('FAILED...', error);
+                alert(t('contact.alertFail'));
+            });
         }
     };
 

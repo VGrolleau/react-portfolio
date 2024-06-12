@@ -110,9 +110,9 @@ yarn install
 -   Create a `.env` file at the root of the project and add your credentials:
 
 ```env
-EMAILJS_USERID=your_emailjs_userid
-EMAILJS_TEMPLATEID=your_emailjs_templateid
-EMAILJS_SERVICEID=your_emailjs_serviceid
+REACT_APP_EMAILJS_CONTACT_SERVICE=your_service
+REACT_APP_EMAILJS_CONTACT_FORM=your_template
+REACT_APP_EMAILJS_PUBLIC_KEY=your_public_key
 ```
 
 2. :fr: **Internationalization:**

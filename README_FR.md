@@ -110,9 +110,9 @@ yarn install
 -   Créez un fichier `.env` à la racine du projet et ajoutez vos informations d'identification :
 
 ```env
-EMAILJS_USERID=your_emailjs_userid
-EMAILJS_TEMPLATEID=your_emailjs_templateid
-EMAILJS_SERVICEID=your_emailjs_serviceid
+REACT_APP_EMAILJS_CONTACT_SERVICE=votre_service
+REACT_APP_EMAILJS_CONTACT_FORM=votre_template
+REACT_APP_EMAILJS_PUBLIC_KEY=votre_clé_publique
 ```
 
 2. :us: **Internationalisation :**
