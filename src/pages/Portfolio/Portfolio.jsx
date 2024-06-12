@@ -16,6 +16,7 @@ const Portfolio = () => {
     const titleArray = t('projects.title').split('');
     const [activeLiIndex, setActiveLiIndex] = useState(null);
     const [animationKey, setAnimationKey] = useState(0);
+    const [selectedCategory, setSelectedCategory] = useState('all');
 
     // Show content after a delay
     useEffect(() => {
@@ -43,6 +44,13 @@ const Portfolio = () => {
         return null;
     };
 
+    // Handle category change
+    const handleCategoryChange = (event) => {
+        setSelectedCategory(event.target.value);
+        setActiveLiIndex(null); // Reset active project when category changes
+        setAnimationKey(prevKey => prevKey + 1); // Update key to trigger animation
+    };
+
     return (
         <>
             {showContent && (
@@ -51,23 +59,35 @@ const Portfolio = () => {
                         <h1>
                             <AnimatedLetters letterClass={letterClass} charactersArray={titleArray} index={10} />
                         </h1>
+                        <div className='category-selector'>
+                            <label htmlFor='category'>{t('projects.selectCategory')}</label>
+                            <select id='category' value={selectedCategory} onChange={handleCategoryChange}>
+                                <option value="all">{t('projects.all')} ({dataProjects.personal.length + dataProjects.openclassrooms.length})</option>
+                                <option value="personal">{t('projects.personal')} ({dataProjects.personal.length})</option>
+                                <option value="openclassrooms">{t('projects.openclassrooms')} ({dataProjects.openclassrooms.length})</option>
+                            </select>
+                        </div>
                         <ul>
                             {/* Render personal projects */}
-                            <LiData
-                                category="personal"
-                                dataObject={dataProjects.personal}
-                                activeLiIndex={activeLiIndex}
-                                setActiveLiIndex={setActiveLiIndex}
-                                setAnimationKey={setAnimationKey}
-                            />
+                            {(selectedCategory === 'all' || selectedCategory === 'personal') && (
+                                <LiData
+                                    category="personal"
+                                    dataObject={dataProjects.personal}
+                                    activeLiIndex={activeLiIndex}
+                                    setActiveLiIndex={setActiveLiIndex}
+                                    setAnimationKey={setAnimationKey}
+                                />
+                            )}
                             {/* Render openclassrooms projects */}
-                            <LiData
-                                category="openclassrooms"
-                                dataObject={dataProjects.openclassrooms}
-                                activeLiIndex={activeLiIndex}
-                                setActiveLiIndex={setActiveLiIndex}
-                                setAnimationKey={setAnimationKey}
-                            />
+                            {(selectedCategory === 'all' || selectedCategory === 'openclassrooms') && (
+                                <LiData
+                                    category="openclassrooms"
+                                    dataObject={dataProjects.openclassrooms}
+                                    activeLiIndex={activeLiIndex}
+                                    setActiveLiIndex={setActiveLiIndex}
+                                    setAnimationKey={setAnimationKey}
+                                />
+                            )}
                         </ul>
                     </div>
                     <div className="project-overview">

@@ -16,7 +16,11 @@
         "contact": "contact"
     },
     "projects": {
-        "title": "My projects"
+        "title": "My projects",
+        "selectCategory": "Select category:",
+        "all": "All",
+        "personal": "Personal Projects",
+        "openclassrooms": "OpenClassrooms Projects"
     },
     "dataProjects": {
         "personal": [

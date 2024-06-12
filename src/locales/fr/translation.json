@@ -16,7 +16,11 @@
         "contact": "contact"
     },
     "projects": {
-        "title": "Mes projets"
+        "title": "Mes projets",
+        "selectCategory": "Choisir une catégorie :",
+        "all": "Tous",
+        "personal": "Projets personnels",
+        "openclassrooms": "Projets OpenClassrooms"
     },
     "dataProjects": {
         "personal": [
