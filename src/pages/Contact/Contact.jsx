@@ -51,13 +51,13 @@ const Contact = () => {
 
     const handleChange = (e) => {
         const { name, value } = e.target;
-        const error = validate(name, value); // Utiliser validate ici
+        const error = validate(name, value); // Use validate here
         setErrors((prevErrors) => ({ ...prevErrors, [name]: error }));
     };
 
-    // Utiliser validate dans le tableau de dépendances de useEffect
+    // Use validate in useEffect dependencies array
     useEffect(() => {
-        // Valider le formulaire lorsque la langue change
+        // Validate form when language is changing
         const form = refForm.current;
         const formData = new FormData(form);
         let newErrors = {};
