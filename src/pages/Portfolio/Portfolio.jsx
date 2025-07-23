@@ -8,6 +8,7 @@ import { useTranslation } from 'react-i18next';
  * Component for rendering the Portfolio page.
  */
 const Portfolio = () => {
+    const categories = ['personal', 'openclassrooms', 'professional'];
     const { t } = useTranslation();
     const dataProjects = t('dataProjects', { returnObjects: true });
 
@@ -38,8 +39,14 @@ const Portfolio = () => {
     const getImageUrl = () => {
         if (activeLiIndex !== null) {
             const [category, index] = activeLiIndex.split('-');
-            const data = category === 'personal' ? dataProjects.personal[index] : dataProjects.openclassrooms[index];
-            return data.imageURL;
+            const categories = {
+                personal: dataProjects.personal,
+                openclassrooms: dataProjects.openclassrooms,
+                professional: dataProjects.professional,
+            };
+
+            const dataArray = categories[category];
+            return dataArray?.[index]?.imageURL || null;
         }
         return null;
     };
@@ -62,32 +69,31 @@ const Portfolio = () => {
                         <div className='category-selector'>
                             <label htmlFor='category'>{t('projects.selectCategory')}</label>
                             <select id='category' value={selectedCategory} onChange={handleCategoryChange}>
-                                <option value="all">{t('projects.all')} ({dataProjects.personal.length + dataProjects.openclassrooms.length})</option>
-                                <option value="personal">{t('projects.personal')} ({dataProjects.personal.length})</option>
-                                <option value="openclassrooms">{t('projects.openclassrooms')} ({dataProjects.openclassrooms.length})</option>
+                                <option value="all">
+                                    {t('projects.all')} (
+                                    {categories.reduce((sum, category) => sum + dataProjects[category].length, 0)}
+                                    )
+                                </option>
+                                {categories.map(category => (
+                                    <option key={category} value={category}>
+                                        {t(`projects.${category}`)} ({dataProjects[category].length})
+                                    </option>
+                                ))}
                             </select>
                         </div>
                         <ul>
-                            {/* Render personal projects */}
-                            {(selectedCategory === 'all' || selectedCategory === 'personal') && (
-                                <LiData
-                                    category="personal"
-                                    dataObject={dataProjects.personal}
-                                    activeLiIndex={activeLiIndex}
-                                    setActiveLiIndex={setActiveLiIndex}
-                                    setAnimationKey={setAnimationKey}
-                                />
-                            )}
-                            {/* Render openclassrooms projects */}
-                            {(selectedCategory === 'all' || selectedCategory === 'openclassrooms') && (
-                                <LiData
-                                    category="openclassrooms"
-                                    dataObject={dataProjects.openclassrooms}
-                                    activeLiIndex={activeLiIndex}
-                                    setActiveLiIndex={setActiveLiIndex}
-                                    setAnimationKey={setAnimationKey}
-                                />
-                            )}
+                            {['personal', 'openclassrooms', 'professional']
+                                .filter(category => selectedCategory === 'all' || selectedCategory === category)
+                                .map(category => (
+                                    <LiData
+                                        key={category}
+                                        category={category}
+                                        dataObject={dataProjects[category]}
+                                        activeLiIndex={activeLiIndex}
+                                        setActiveLiIndex={setActiveLiIndex}
+                                        setAnimationKey={setAnimationKey}
+                                    />
+                                ))}
                         </ul>
                     </div>
                     <div className="project-overview">

@@ -849,6 +849,52 @@ export const dataProjects = [
         },
         imageURL: "assets/images/projects/booki.png"
       }
+    ],
+    freelance: [
+      {
+        name: "Collectif Mélusine",
+        description: {
+          text: "Site vitrine du Collectif Mélusine, tiers-lieux à Lusignan et dont je suis bénévole.",
+          li: [
+            {
+              content: "",
+              sublevel: []
+            }
+          ]
+        },
+        skills: [
+          "HTML5",
+          "CSS3",
+          "JavaScript"
+        ],
+        links: {
+          github: {
+            frontend: {
+              text: "",
+              url: ""
+            },
+            backend: {
+              text: "",
+              url: ""
+            },
+            other: {
+              text: "",
+              url: ""
+            }
+          },
+          site: {
+            app: {
+              text: "Site Collectif",
+              url: "https://collectifmelusine.org/"
+            },
+            other: {
+              text: "",
+              url: ""
+            }
+          }
+        },
+        imageURL: "assets/images/projects/collectif.png"
+      }
     ]
   }
 ]

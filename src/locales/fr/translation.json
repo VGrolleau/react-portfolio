@@ -21,7 +21,8 @@
         "selectCategory": "Choisir une catégorie :",
         "all": "Tous",
         "personal": "Projets personnels",
-        "openclassrooms": "Projets OpenClassrooms"
+        "openclassrooms": "Projets OpenClassrooms",
+        "freelance": "Projets Freelance"
     },
     "dataProjects": {
         "personal": [
@@ -731,6 +732,52 @@
                     }
                 },
                 "imageURL": "assets/images/projects/booki.png"
+            }
+        ],
+        "freelance": [
+            {
+                "name": "Collectif Mélusine",
+                "description": {
+                    "text": "Développement du site du Collectif Mélusine, un tiers-lieu à Lusignan (86), pour lequel j’apporte également mon aide en tant que bénévole.",
+                    "li": [
+                        {
+                            "content": "",
+                            "sublevel": []
+                        }
+                    ]
+                },
+                "skills": [
+                    "WordPress (installation & configuration)",
+                    "Personnalisation visuelle (constructeur de page)",
+                    "Responsive & SEO de base"
+                ],
+                "links": {
+                    "github": {
+                        "frontend": {
+                            "text": "",
+                            "url": ""
+                        },
+                        "backend": {
+                            "text": "",
+                            "url": ""
+                        },
+                        "other": {
+                            "text": "",
+                            "url": ""
+                        }
+                    },
+                    "site": {
+                        "app": {
+                            "text": "Site Collectif",
+                            "url": "https://collectifmelusine.org/"
+                        },
+                        "other": {
+                            "text": "",
+                            "url": ""
+                        }
+                    }
+                },
+                "imageURL": "assets/images/projects/collectif.png"
             }
         ]
     },
