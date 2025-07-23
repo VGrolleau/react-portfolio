@@ -33,6 +33,9 @@ const Modal = ({ isOpen, selectedData, onClose }) => {
     case "openclassrooms":
       categoryName = "OpenClassrooms";
       break;
+    case "freelance":
+      categoryName = "Freelance";
+      break;
     default:
       break;
   }

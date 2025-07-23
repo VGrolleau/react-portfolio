@@ -8,7 +8,7 @@ import { useTranslation } from 'react-i18next';
  * Component for rendering the Portfolio page.
  */
 const Portfolio = () => {
-    const categories = ['personal', 'openclassrooms', 'professional'];
+    const categories = ['personal', 'openclassrooms', 'freelance'];
     const { t } = useTranslation();
     const dataProjects = t('dataProjects', { returnObjects: true });
 
@@ -42,7 +42,7 @@ const Portfolio = () => {
             const categories = {
                 personal: dataProjects.personal,
                 openclassrooms: dataProjects.openclassrooms,
-                professional: dataProjects.professional,
+                freelance: dataProjects.freelance,
             };
 
             const dataArray = categories[category];
@@ -82,7 +82,7 @@ const Portfolio = () => {
                             </select>
                         </div>
                         <ul>
-                            {['personal', 'openclassrooms', 'professional']
+                            {categories
                                 .filter(category => selectedCategory === 'all' || selectedCategory === category)
                                 .map(category => (
                                     <LiData
